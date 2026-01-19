@@ -3,41 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Whytegod Exchange</title>
+  <title>Whytegod Exchange | P2P Digital Assets</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #0b1c2d;
+      background: linear-gradient(180deg, #081a2b, #0b2a44);
       color: #ffffff;
-      text-align: center;
     }
     .container {
-      padding: 40px 20px;
       max-width: 420px;
       margin: auto;
+      padding: 30px 20px 60px;
+      text-align: center;
     }
-    .logo {
-      font-size: 26px;
+    .logo img {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+    .title {
+      font-size: 22px;
       font-weight: bold;
-      color: #4da3ff;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
     }
-    .tagline {
-      font-size: 14px;
-      color: #cfd8e3;
+    .subtitle {
+      font-size: 13px;
+      color: #cbd6e2;
       margin-bottom: 30px;
     }
     .card {
-      background: #122a45;
-      border-radius: 12px;
+      background: #102c46;
+      border-radius: 14px;
       padding: 25px;
       margin-bottom: 20px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
     }
     .card h2 {
-      margin-top: 0;
+      margin: 0 0 10px;
       font-size: 20px;
+    }
+    .card p {
+      font-size: 13px;
+      color: #d6e1ec;
     }
     .btn {
       display: block;
@@ -47,48 +59,79 @@
       font-size: 16px;
       font-weight: bold;
       color: #ffffff;
-      background: #1e88ff;
+      background: #1f8cff;
       border: none;
-      border-radius: 8px;
-      cursor: pointer;
+      border-radius: 10px;
       text-decoration: none;
     }
     .btn.sell {
-      background: #00c896;
+      background: #00c389;
     }
-    .footer {
+    .trust {
       font-size: 12px;
-      color: #9fb3c8;
+      color: #9fb6cc;
+      margin-top: 25px;
+      line-height: 1.6;
+    }
+    .legal {
+      font-size: 11px;
+      color: #8aa0b5;
       margin-top: 30px;
+      border-top: 1px solid #1f3b55;
+      padding-top: 15px;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <div class="logo">WHYTEGOD EXCHANGE</div>
-    <div class="tagline">Fast • Secure • Trusted Digital Asset Trading</div>
 
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="logo.png" alt="Whytegod Logo">
+    </div>
+
+    <div class="title">WHYTEGOD EXCHANGE</div>
+    <div class="subtitle">
+      Secure P2P Digital Asset Buy & Sell Platform
+    </div>
+
+    <!-- BUY -->
     <div class="card">
       <h2>Buy Crypto</h2>
-      <p>USDT • BTC • ETH and more</p>
-      <a class="btn" href="https://forms.gle/dJ5UA8ASSfMJwZe98" target="_blank">
+      <p>USDT • BTC • ETH • Fast confirmation</p>
+      <a class="btn" 
+         href="https://forms.gle/dJ5UA8ASSfMJwZe98" 
+         target="_blank">
         BUY NOW
       </a>
     </div>
 
+    <!-- SELL -->
     <div class="card">
       <h2>Sell Crypto</h2>
-      <p>Instant processing after confirmation</p>
-      <a class="btn sell" href="https://forms.gle/dJ5UA8ASSfMJwZe98" target="_blank">
+      <p>Competitive rates • Secure settlement</p>
+      <a class="btn sell" 
+         href="https://forms.gle/dJ5UA8ASSfMJwZe98" 
+         target="_blank">
         SELL NOW
       </a>
     </div>
 
-    <div class="footer">
-      © 2026 Whytegod Exchange<br/>
-      Trade responsibly. Terms apply.
+    <!-- TRUST -->
+    <div class="trust">
+      ✔ Manual verification for every order<br>
+      ✔ Secure P2P transactions<br>
+      ✔ No automated fund holding
     </div>
+
+    <!-- LEGAL -->
+    <div class="legal">
+      Whytegod Exchange operates as a peer-to-peer facilitator.<br>
+      All trades are subject to confirmation and compliance checks.<br><br>
+      © 2026 Whytegod Exchange. All rights reserved.
+    </div>
+
   </div>
 
 </body>
