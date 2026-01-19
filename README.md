@@ -1,96 +1,141 @@
-# WHYTEGOD
+# WHYTGOD
 
-Whytegod is an **AI-first, intent-driven financial execution protocol** built on top of the **Open Financial Network (OFN)**.
+Whytegod is an AI-first, peer-to-peer financial execution layer built on top of the Open Financial Network (OFN).
 
-It defines how user intent is expressed, validated, and executed across a decentralized financial system.
+It is not a blockchain, not a wallet, and not a trading platform.
 
----
-
-## What This Repository Is
-
-This repository contains the **protocol specification** for Whytegod.
-
-It is:
-- A **design and specification layer**
-- A **reference for builders, auditors, and integrators**
-- A **foundation for future implementations**
-
-It is **not**:
-- A frontend application
-- A deployed smart contract
-- A custodial service
+Whytegod is a **coordination and execution protocol** that translates user intent into validated, governed financial actions across OFN-compatible systems.
 
 ---
 
-## Core Concept
+## What Whytegod Is
 
-Whytegod introduces **Intent-Based Finance**.
+Whytegod defines **how financial intent is expressed, validated, and executed** in a decentralized environment.
 
-Instead of users interacting directly with complex financial systems, they express **intent**, and the protocol defines how that intent is safely interpreted and executed.
+It provides:
+- A standard way to describe user intent
+- A clear interface for execution systems
+- A governed execution flow
+- A reference path for real-world implementation
 
-Example intent:
-- “Swap token A for token B at the best available rate”
-- “Move funds only if security conditions are met”
-
----
-
-## Repository Structure
-
-The repository is organized as follows:
-
-- `INTENT.md` — Defines the intent model and structure  
-- `schema/` — Machine-readable schemas for intent validation  
-- `FLOW.md` — Describes how intents move through the system  
-- `EXECUTION.md` — Defines execution rules and constraints  
-- `INTERFACE.md` — Interface boundaries between system actors  
-- `SECURITY.md` — Threat model and safety assumptions  
-- `ROLES.md` — Roles within the protocol  
-- `governance/` — Governance principles and controls  
-- `OFN_ALIGNMENT.md` — Alignment with Open Financial Network principles  
-- `OFN_STATUS.md` — Current status of OFN alignment  
+Whytegod does **not** custody funds, issue assets, or enforce financial outcomes.
 
 ---
 
-## Start Here (Reading Order)
+## What Whytegod Is Not
 
-If you are new to Whytegod, read in this order:
+- Not a bank  
+- Not an exchange  
+- Not a smart contract platform  
+- Not an investment product  
+- Not a custodial service  
 
-1. [`INTENT.md`](./INTENT.md)  
-2. [`FLOW.md`](./FLOW.md)  
-3. [`EXECUTION.md`](./EXECUTION.md)  
-4. [`INTERFACE.md`](./INTERFACE.md)  
-5. [`schema/`](./schema)  
-6. [`SECURITY.md`](./SECURITY.md)  
+Whytegod is strictly an **execution-layer protocol**.
 
 ---
 
-## Open Financial Network (OFN)
+## Core Concepts
 
-Whytegod is designed to operate within the principles of the **Open Financial Network (OFN)**.
+### Intent
+User actions are expressed as structured intents rather than direct commands.
 
-The protocol emphasizes:
-- Openness
-- Interoperability
+See: `INTENT.md`
+
+---
+
+### Interface
+Execution systems interact with Whytegod through a defined interface.
+
+See: `INTERFACE.md`
+
+---
+
+### Validation
+All intents must pass schema and rule validation before execution.
+
+See: `schema/`
+
+---
+
+### Execution
+Execution is deterministic, auditable, and non-custodial.
+
+See: `EXECUTION.md`
+
+---
+
+### Flow
+Whytegod defines a full lifecycle from intent creation to execution outcome.
+
+See: `FLOW.md`
+
+---
+
+## Governance
+
+Protocol rules, evolution, and safeguards are governed through explicit documentation.
+
+See: `governance/`  
+See also: `ROLES.md`
+
+---
+
+## Security Model
+
+Whytegod prioritizes:
 - Non-custodial execution
-- User intent sovereignty
+- Deterministic behavior
+- Explicit failure handling
+- Minimal trust assumptions
 
-This repository **does not claim official OFN endorsement**.  
-Alignment details are documented transparently.
+See: `SECURITY.md`
 
 ---
 
-## Project Status
+## OFN Relationship
 
-Whytegod is currently in the **specification and design phase**.
+Whytegod is designed to operate **on top of** the Open Financial Network (OFN).
 
-- No production deployment
-- No token issuance
-- No live financial operations
+- Whytegod does not modify OFN
+- Whytegod does not claim OFN ownership
+- Whytegod aligns with OFN execution principles
 
-All changes are experimental and subject to revision.
+See:
+- `OFN_ALIGNMENT.md`
+- `OFN_STATUS.md`
+
+---
+
+## Reference Implementation
+
+A minimal, non-prescriptive reference outline is provided to demonstrate implementability.
+
+This reference does **not** define production behavior.
+
+See: `REFERENCE_IMPLEMENTATION.md`
+
+---
+
+## Roadmap
+
+Planned milestones and evolution are documented separately.
+
+See: `ROADMAP.md`
+
+---
+
+## Status
+
+This repository defines **Whytegod Protocol Specification v0.1**.
+
+The protocol is:
+- Specification-complete
+- Open for review
+- Open for implementation
 
 ---
 
 ## License
 
-MIT License
+Open specification.  
+Implementation details are intentionally left flexible.
