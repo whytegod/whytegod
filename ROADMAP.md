@@ -1,74 +1,86 @@
-# WHYTGOD Execution Roadmap
+# Whytegod Roadmap
 
-This roadmap defines the initial execution phases of WHYTGOD.
-The focus is real-world utility, safety, and alignment with OFN.
+This roadmap defines the phased development of Whytegod as an AI-first,
+intent-based peer-to-peer (P2P) financial execution layer built on the
+Open Financial Network (OFN).
 
----
-
-## Phase 0 — Foundation (Current)
-
-Status:
-- Protocol definition established
-- Governance framework active
-- Security policy published
-- OFN alignment declared
-
-Goal:
-Create trust and clarity before writing production code.
+The goal is clarity, not speed.
 
 ---
 
-## Phase 1 — Day 1 to Day 30 (MVP Definition)
+## Phase 1 — P2P MVP (Current Focus)
 
-Objectives:
-- Define the minimum viable execution flow
-- Specify supported P2P transaction types
-- Define trust and dispute boundaries
-- Design the execution interface (non-custodial)
+The first phase delivers a minimal, functional P2P execution system that
+proves the core intent → execution flow.
 
-Deliverables:
-- Execution flow specification
-- System architecture outline
-- Initial interface mock or schema
+### Objectives
+- Enable peer-to-peer financial actions using intent-based abstraction
+- Separate *what users want* from *how execution happens*
+- Maintain OFN alignment without protocol coupling
 
-Outcome:
-WHYTGOD becomes a clearly defined execution layer, not an idea.
+### Scope
+- User intent submission (buy, sell, send, receive)
+- Intent validation and normalization
+- Counterparty matching (manual or assisted)
+- Execution state tracking (pending, in-progress, completed)
+- Human-readable execution logs
 
----
+### Explicitly Out of Scope
+- Smart contracts
+- Tokens or on-chain settlement
+- Automated liquidity pools
+- Regulatory enforcement
+- Custodial asset holding
 
-## Phase 2 — Day 31 to Day 90 (Prototype)
-
-Objectives:
-- Implement a basic execution coordinator
-- Integrate with OFN-compatible rails
-- Enable limited P2P execution scenarios
-- Internal testing and validation
-
-Deliverables:
-- Working prototype
-- Test cases
-- Security review checklist
-
-Outcome:
-WHYTGOD executes real transactions in controlled conditions.
+This phase is designed for learning, iteration, and clarity.
 
 ---
 
-## Phase 3 — Expansion (Post-90 Days)
+## Phase 2 — Assisted Execution & Interfaces
 
-Objectives:
-- Expand supported assets and flows
-- Harden security and monitoring
-- Prepare for external users or partners
+Once the P2P MVP is validated, the focus shifts to usability and assisted
+execution.
 
-Deliverables:
-- Public-facing documentation
-- Extended security review
-- Deployment strategy
+### Objectives
+- Introduce structured interfaces for intent creation
+- Enable AI-assisted execution routing
+- Improve observability and feedback loops
+
+### Scope
+- Basic web interface for P2P actions
+- Execution suggestions and guardrails
+- Error handling and retry flows
+- Interface specification stabilization
 
 ---
 
-## Guiding Principle
+## Phase 3 — Protocol Hardening & Ecosystem Alignment
 
-WHYTGOD prioritizes execution integrity over growth.
-Features are added only when safety and clarity are preserved.
+This phase prepares Whytegod for external collaboration and long-term
+protocol development.
+
+### Objectives
+- Harden specifications
+- Improve interoperability
+- Enable external contributors
+
+### Scope
+- Formalized schemas
+- Governance process refinement
+- Contributor onboarding documentation
+- Extended OFN compatibility
+
+---
+
+## Guiding Principles
+
+- Specification before implementation
+- Human readability over abstraction
+- Execution clarity over automation
+- Minimal surface area at every phase
+
+---
+
+## Status
+
+Whytegod is currently in **Phase 1 — P2P MVP**.
