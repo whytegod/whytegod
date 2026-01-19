@@ -1,138 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Whytegod Exchange | P2P Digital Assets</title>
+  <meta charset="UTF-8">
+  <title>Whytegod Trade | P2P Crypto Exchange</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="favicon.png">
 
+  <!-- BASIC STYLE -->
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #081a2b, #0b2a44);
-      color: #ffffff;
+      background: #f4f6f8;
+      color: #111;
     }
-    .container {
-      max-width: 420px;
-      margin: auto;
-      padding: 30px 20px 60px;
+
+    header {
+      background: #0a58ff;
+      color: white;
+      padding: 20px;
       text-align: center;
     }
-    .logo img {
-      width: 120px;
-      margin-bottom: 15px;
+
+    header img {
+      max-width: 120px;
+      margin-bottom: 10px;
     }
-    .title {
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 5px;
-      letter-spacing: 1px;
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
     }
-    .subtitle {
-      font-size: 13px;
-      color: #cbd6e2;
-      margin-bottom: 30px;
+
+    h1, h2 {
+      margin-bottom: 10px;
     }
-    .card {
-      background: #102c46;
-      border-radius: 14px;
-      padding: 25px;
-      margin-bottom: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
-    }
-    .card h2 {
-      margin: 0 0 10px;
-      font-size: 20px;
-    }
-    .card p {
-      font-size: 13px;
-      color: #d6e1ec;
-    }
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 15px;
-      margin-top: 15px;
-      font-size: 16px;
-      font-weight: bold;
-      color: #ffffff;
-      background: #1f8cff;
-      border: none;
-      border-radius: 10px;
-      text-decoration: none;
-    }
-    .btn.sell {
-      background: #00c389;
-    }
-    .trust {
-      font-size: 12px;
-      color: #9fb6cc;
-      margin-top: 25px;
+
+    p {
+      max-width: 600px;
+      margin: auto;
       line-height: 1.6;
     }
-    .legal {
-      font-size: 11px;
-      color: #8aa0b5;
+
+    .trade-buttons {
       margin-top: 30px;
-      border-top: 1px solid #1f3b55;
-      padding-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 16px 35px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .btn.buy {
+      background: #0a58ff;
+    }
+
+    .btn.sell {
+      background: #00b894;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    .trust {
+      background: white;
+      margin-top: 40px;
+      border-top: 1px solid #ddd;
+    }
+
+    .trust-box {
+      max-width: 800px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .trust-item {
+      background: #f4f6f8;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="container">
+  <!-- HEADER -->
+  <header>
+    <!-- Replace logo.png with your Whytegod logo -->
+    <img src="logo.png" alt="Whytegod Trade Logo">
+    <h1>Whytegod Trade</h1>
+    <p>Fast • Secure • Trusted P2P Crypto Exchange</p>
+  </header>
 
-    <!-- LOGO -->
-    <div class="logo">
-      <img src="logo.png" alt="Whytegod Logo">
-    </div>
+  <!-- HERO SECTION -->
+  <section>
+    <h2>Buy & Sell Crypto Instantly</h2>
+    <p>
+      Trade USDT, BTC and other digital assets safely with verified payment methods.
+      Simple process. No middleman.
+    </p>
 
-    <div class="title">WHYTEGOD EXCHANGE</div>
-    <div class="subtitle">
-      Secure P2P Digital Asset Buy & Sell Platform
-    </div>
+    <div class="trade-buttons">
+      <a href="https://forms.gle/6GDYxmApX7RutjT6A" target="_blank" class="btn buy">
+        Buy Crypto
+      </a>
 
-    <!-- BUY -->
-    <div class="card">
-      <h2>Buy Crypto</h2>
-      <p>USDT • BTC • ETH • Fast confirmation</p>
-      <a class="btn" 
-         href="https://forms.gle/dJ5UA8ASSfMJwZe98" 
-         target="_blank">
-        BUY NOW
+      <a href="https://forms.gle/VhV5e8CrrZmFC6Au6" target="_blank" class="btn sell">
+        Sell Crypto
       </a>
     </div>
+  </section>
 
-    <!-- SELL -->
-    <div class="card">
-      <h2>Sell Crypto</h2>
-      <p>Competitive rates • Secure settlement</p>
-      <a class="btn sell" 
-         href="https://forms.gle/dJ5UA8ASSfMJwZe98" 
-         target="_blank">
-        SELL NOW
-      </a>
+  <!-- TRUST SECTION -->
+  <section class="trust">
+    <h2>Why Trade With Us</h2>
+
+    <div class="trust-box">
+      <div class="trust-item">
+        <h3>Secure P2P</h3>
+        <p>Direct buyer-to-seller transactions with clear confirmation steps.</p>
+      </div>
+
+      <div class="trust-item">
+        <h3>Fast Processing</h3>
+        <p>Orders are reviewed and processed as quickly as possible.</p>
+      </div>
+
+      <div class="trust-item">
+        <h3>Multiple Payments</h3>
+        <p>Bank transfer and other supported local payment options.</p>
+      </div>
+
+      <div class="trust-item">
+        <h3>Customer Support</h3>
+        <p>Every order is tracked and handled professionally.</p>
+      </div>
     </div>
+  </section>
 
-    <!-- TRUST -->
-    <div class="trust">
-      ✔ Manual verification for every order<br>
-      ✔ Secure P2P transactions<br>
-      ✔ No automated fund holding
-    </div>
-
-    <!-- LEGAL -->
-    <div class="legal">
-      Whytegod Exchange operates as a peer-to-peer facilitator.<br>
-      All trades are subject to confirmation and compliance checks.<br><br>
-      © 2026 Whytegod Exchange. All rights reserved.
-    </div>
-
-  </div>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Whytegod Trade. All rights reserved.</p>
+    <p>P2P trading involves risk. Trade responsibly.</p>
+  </footer>
 
 </body>
 </html>
