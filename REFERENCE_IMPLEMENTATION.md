@@ -1,213 +1,147 @@
-# Whytegod Reference Implementation Outline
+# Reference Implementation (Conceptual Only)
 
-## Purpose
+This document provides a **simple, non-executable reference**
+for how the Whytegod protocol is intended to work.
 
-This document provides a **minimal, non-prescriptive reference outline** for implementing the Whytegod protocol.
+It is written for understanding and review only.
 
-It is intended to:
-- Prove implementability
-- Guide engineers
-- Prevent misinterpretation of the specification
+There is:
+- No real code
+- No deployment logic
+- No smart contracts
+- No token logic
+- No custody of funds
 
-This is **not** a production implementation.
-
----
-
-## Design Goals
-
-The reference implementation aims to:
-
-- Respect all protocol boundaries
-- Remain non-custodial
-- Be deterministic
-- Be auditable
-- Be simple and modular
-
-It prioritizes **clarity over performance**.
+This is a **conceptual walkthrough**, not an implementation.
 
 ---
 
-## High-Level Architecture
+## What This Document Is For
 
-The reference implementation is composed of four logical modules:
+This reference explains, in plain terms:
 
-1. Interface Layer
-2. Validation Module
-3. Execution Engine
-4. Result Registry
+1. How a user expresses intent
+2. How the protocol checks that intent
+3. How an execution path is chosen
+4. Where execution responsibility ends
+5. How results are observed
 
-Each module maps directly to a specification document.
-
----
-
-## Module 1: Interface Layer
-
-### Responsibilities
-
-- Accept intent submissions
-- Expose query endpoints
-- Reject malformed requests
-
-### Example Components
-
-- REST or RPC endpoint
-- Intent submission handler
-- Status query handler
-
-### Explicit Non-Responsibilities
-
-- No execution logic
-- No asset handling
-- No intent interpretation
+It exists to show **clarity of design**, not technical detail.
 
 ---
 
-## Module 2: Validation Module
+## Step 1: Intent Submission
 
-### Responsibilities
+A user expresses *what they want to achieve*.
 
-- Validate intent schema
-- Enforce immutability
-- Assign unique intent identifiers
+Examples:
+- Exchange value with constraints
+- Transfer assets under conditions
+- Complete a P2P financial action
 
-### Example Components
+The intent describes:
+- The desired outcome
+- The limits and constraints
+- Acceptable conditions
 
-- Schema validator
-- Intent ID generator
-- Acceptance / rejection logic
-
-Validation must complete **before execution begins**.
-
----
-
-## Module 3: Execution Engine
-
-### Responsibilities
-
-- Receive validated intent
-- Perform pre-execution checks
-- Plan execution path
-- Execute deterministically
-- Produce a terminal result
-
-### Internal Stages
-
-1. Precondition evaluation
-2. Execution planning
-3. Execution attempt
-4. Finalization
-
-### Constraints
-
-- No custody of assets
-- No discretionary behavior
-- No implicit retries
-- No intent mutation
+The intent does **not** describe:
+- How execution happens
+- Who executes it
+- What system performs settlement
 
 ---
 
-## Module 4: Result Registry
+## Step 2: Intent Validation
 
-### Responsibilities
+The protocol checks the intent before anything happens.
 
-- Store execution outcomes
-- Enforce immutability
-- Provide read-only access
+Validation ensures:
+- The intent is understandable
+- Required information is present
+- Constraints are not contradictory
+- The intent follows protocol rules
 
-### Properties
+If validation fails:
+- Nothing proceeds
+- No execution is attempted
 
-- One result per intent
-- Terminal-only states
-- Verifiable linkage to intent ID
-
----
-
-## Execution Lifecycle (Reference)
-
-1. Intent submitted via interface
-2. Validation module accepts or rejects
-3. Accepted intent passed to execution engine
-4. Execution produces terminal outcome
-5. Result published to registry
-6. Interface exposes result
+At this stage, **no assets move**.
 
 ---
 
-## Data Structures (Conceptual)
+## Step 3: Execution Path Resolution
 
-### Intent
+If the intent is valid, the protocol determines
+*how the intent could be fulfilled*.
 
-- intent_id
-- intent_payload
-- declared_constraints
-- timestamp
+This includes:
+- Finding a compliant execution path
+- Ensuring constraints can be met
+- Confirming the intent is executable in principle
 
-### Execution Result
+This step produces an **execution plan**, not execution itself.
 
-- intent_id
-- outcome_type (executed | failed | rejected)
-- outcome_metadata
-- timestamp
-
----
-
-## Determinism Notes
-
-To preserve determinism:
-
-- All decisions must be rule-based
-- External data sources must be normalized
-- Time-dependent behavior must be bounded
-- Randomness is prohibited
+Given the same intent and conditions,
+the same plan should be produced.
 
 ---
 
-## Failure Handling
+## Step 4: Execution Boundary (Critical)
 
-Failures must:
+The protocol **does not execute transactions**.
 
-- Be explicit
-- Produce terminal outcomes
-- Leave no ambiguous state
+Instead:
+- It authorizes an execution plan
+- It hands responsibility to external systems
+- It does not custody assets
+- It does not control settlement
 
-Failure is a valid and expected result.
+This boundary is intentional and strict.
 
----
-
-## Security Considerations
-
-The reference implementation must:
-
-- Enforce strict module boundaries
-- Reject invalid inputs early
-- Avoid privileged execution paths
-- Preserve immutability guarantees
+Whytegod coordinates intent — it does not act as an executor.
 
 ---
 
-## What This Is Not
+## Step 5: Outcome Observation
 
-This reference implementation is NOT:
+After execution occurs externally,
+the protocol observes the result.
 
-- A production system
-- An SDK
-- A smart contract
-- A hosted service
+Observation may include:
+- Whether execution succeeded or failed
+- Whether constraints were respected
+- The final outcome state
 
-It exists solely to demonstrate **how Whytegod can be built correctly**.
+The protocol records outcomes but:
+- Does not retry execution
+- Does not reverse results
+- Does not intervene post-settlement
+
+---
+
+## What This Reference Does NOT Cover
+
+This document intentionally excludes:
+- Optimization logic
+- Pricing or routing strategies
+- Fees or incentives
+- Token models
+- Governance execution
+- Infrastructure choices
+- Security implementation details
+
+Those concerns belong in other documents or future phases.
 
 ---
 
 ## Summary
 
-This reference outline proves that Whytegod:
+This reference shows that the Whytegod protocol:
 
-- Is implementable
-- Is modular
-- Is safe by design
-- Can be built without hidden assumptions
+- Separates intent from execution
+- Enforces clear responsibility boundaries
+- Avoids custody and settlement risk
+- Remains neutral and implementation-agnostic
+- Can be reasoned about without code
 
-Any compliant implementation must preserve:
-- Intent immutability
-- Deterministic execution
-- Non-custodial behavior
+It is a shared understanding tool — nothing more.
