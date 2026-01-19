@@ -1,39 +1,71 @@
-# OFN Status & Alignment
+# Open Financial Network (OFN) Status
 
 ## Current Status
-Whytegod is not yet deployed as a live module within the OFN network.
 
-Whytegod currently operates as an OFN-aligned execution protocol specification.
+Whytegod is **not an official component** of the Open Financial Network (OFN).
 
-## Alignment Summary
-Whytegod aligns with OFN at the architectural level through:
+It is an **independent protocol specification** designed to be compatible with OFN principles and architecture.
 
-- Intent-first execution model
-- Solver-based optimization flow
-- Role-separated execution (Requester, Solver, Matcher, Validator, Executor)
-- Schema-defined intents and validation
+No endorsement, certification, or formal approval is claimed.
 
-These components match OFN’s modular execution philosophy.
+---
 
-## Integration Readiness
-Whytegod is prepared for OFN integration pending:
+## Nature of Alignment
 
-1. Runtime adapter implementation
-2. Solver registration compatibility
-3. Validator interface binding
-4. Execution settlement hooks
+Whytegod aligns with OFN at the **design and philosophy level**, including:
 
-## Public Claim Policy
-Whytegod may accurately be described as:
+- Intent-based interaction
+- Non-custodial execution
+- Open interfaces
+- Interoperability-first design
+- Separation of intent, execution, and settlement
 
-✔ “OFN-aligned”
-✔ “Designed for OFN compatibility”
-✔ “Built with OFN execution principles”
+Alignment is **conceptual and architectural**, not contractual.
 
-Whytegod should not be described as:
+---
 
-✖ “Live on OFN”
-✖ “Deployed on OFN”
-✖ “An official OFN module”
+## What This Repository Does NOT Claim
 
-until formal integration is completed.
+This repository does NOT claim:
+
+- OFN governance approval
+- OFN operational dependency
+- OFN-backed execution guarantees
+- Preferential access to OFN infrastructure
+- Representation of OFN roadmap or priorities
+
+---
+
+## Review Readiness
+
+Whytegod is prepared for:
+
+- Informal architectural review
+- Builder discussion
+- Design feedback
+- Alignment evaluation
+
+It is **not requesting** approval, listing, or integration at this stage.
+
+---
+
+## Change Policy
+
+Any future change to OFN status will be:
+
+- Explicitly documented
+- Versioned
+- Non-retroactive
+- Transparent
+
+---
+
+## Summary
+
+Whytegod is:
+- Independent
+- OFN-aligned by design
+- Honest about its status
+- Conservative in claims
+
+This file exists to prevent misinterpretation.
