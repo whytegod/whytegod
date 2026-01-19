@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WHYTgod Execution Intent",
+  "type": "object",
+  "required": [
+    "intent_id",
+    "requester",
+    "asset",
+    "amount",
+    "constraints",
+    "destination",
+    "expiry"
+  ],
+  "properties": {
+    "intent_id": {
+      "type": "string",
+      "description": "Unique intent identifier"
+    },
+    "requester": {
+      "type": "string",
+      "description": "Originating user or system"
+    },
+    "asset": {
+      "type": "string",
+      "description": "Asset identifier"
+    },
+    "amount": {
+      "type": "number",
+      "description": "Execution amount"
+    },
+    "constraints": {
+      "type": "object",
+      "description": "Execution constraints and limits"
+    },
+    "risk_profile": {
+      "type": "string",
+      "description": "Optional risk preference"
+    },
+    "destination": {
+      "type": "string",
+      "description": "Settlement destination"
+    },
+    "expiry": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Intent expiration"
+    }
+  }
+}
