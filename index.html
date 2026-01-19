@@ -1,224 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Whytegod P2P</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whytegod P2P Exchange</title>
 
   <!-- FAVICON -->
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- BASIC SEO -->
+  <meta name="description" content="Whytegod P2P – Secure peer-to-peer crypto trading. Buy and sell digital assets instantly." />
+  <meta name="author" content="Whytegod" />
 
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #0b1d2a;
+      background: linear-gradient(135deg, #071a2d, #0b2f4a);
       color: #ffffff;
+      text-align: center;
     }
 
     header {
-      display: flex;
-      align-items: center;
-      padding: 15px 20px;
-      background: #06121c;
-      border-bottom: 1px solid #112233;
+      padding: 30px 20px;
     }
 
     header img {
-      height: 42px;
-      margin-right: 12px;
+      width: 120px;
+      max-width: 100%;
     }
 
-    header h1 {
-      font-size: 1.2rem;
-      margin: 0;
+    h1 {
+      margin: 20px 0 10px;
+      font-size: 2.2rem;
       letter-spacing: 1px;
     }
 
-    .container {
-      padding: 20px;
-      max-width: 1000px;
+    p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #d0e6ff;
+    }
+
+    .cta-buttons {
+      margin: 30px 0;
+    }
+
+    .cta-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 30px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+      background: #1e90ff;
+      transition: background 0.3s ease;
+    }
+
+    .cta-buttons a.sell {
+      background: #00c48c;
+    }
+
+    .cta-buttons a:hover {
+      opacity: 0.85;
+    }
+
+    .features {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    .features h2 {
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 900px;
       margin: auto;
     }
 
-    .tabs {
-      display: flex;
-      margin-bottom: 20px;
-    }
-
-    .tab {
-      flex: 1;
-      padding: 12px;
-      text-align: center;
-      background: #112233;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .tab.active {
-      background: #1f6feb;
-    }
-
-    .filters {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-    }
-
-    select {
-      padding: 10px;
-      background: #06121c;
-      color: #fff;
-      border: 1px solid #223344;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    th, td {
-      padding: 12px;
-      border-bottom: 1px solid #223344;
-      text-align: left;
-    }
-
-    th {
-      color: #9fb3c8;
-      font-size: 0.9rem;
-    }
-
-    .buy {
-      color: #2ecc71;
-      font-weight: bold;
-    }
-
-    .sell {
-      color: #e74c3c;
-      font-weight: bold;
-    }
-
-    .btn {
-      padding: 8px 16px;
-      border-radius: 4px;
-      color: #fff;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .btn.buy {
-      background: #2ecc71;
-    }
-
-    .btn.sell {
-      background: #e74c3c;
-    }
-
-    .notice {
-      margin-top: 30px;
-      padding: 15px;
-      background: #06121c;
-      border-left: 4px solid #1f6feb;
-      color: #c9d1d9;
+    .feature-box {
+      padding: 20px;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.25);
     }
 
     footer {
-      text-align: center;
-      padding: 20px;
+      padding: 25px 10px;
       font-size: 0.85rem;
-      color: #8b949e;
+      color: #aac7e6;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <img src="logo.png" alt="Whytegod Logo">
-  <h1>WHYTEGOD P2P</h1>
-</header>
+  <!-- HEADER / LOGO -->
+  <header>
+    <img src="logo.png" alt="Whytegod Logo" />
+    <h1>WHYTGOD P2P</h1>
+    <p>
+      Secure, fast and trusted peer-to-peer crypto trading.
+      Buy and sell digital assets directly with real people.
+    </p>
 
-<div class="container">
+    <!-- CALL TO ACTION -->
+    <div class="cta-buttons">
+      <a href="#" class="buy">Buy Crypto</a>
+      <a href="#" class="sell">Sell Crypto</a>
+    </div>
+  </header>
 
-  <!-- BUY / SELL -->
-  <div class="tabs">
-    <div class="tab active">BUY</div>
-    <div class="tab">SELL</div>
-  </div>
+  <!-- FEATURES -->
+  <section class="features">
+    <h2>Why Choose Whytegod?</h2>
 
-  <!-- FILTERS -->
-  <div class="filters">
-    <select>
-      <option>USDT</option>
-      <option>BTC</option>
-      <option>ETH</option>
-    </select>
+    <div class="feature-grid">
+      <div class="feature-box">
+        🔒 Secure Escrow Trading
+      </div>
+      <div class="feature-box">
+        ⚡ Instant P2P Transactions
+      </div>
+      <div class="feature-box">
+        🌍 Global & Local Payments
+      </div>
+      <div class="feature-box">
+        📱 Mobile-First Experience
+      </div>
+    </div>
+  </section>
 
-    <select>
-      <option>Bank Transfer</option>
-      <option>Mobile Money</option>
-      <option>Cash</option>
-    </select>
-
-    <select>
-      <option>All Regions</option>
-      <option>Africa</option>
-      <option>Asia</option>
-      <option>Europe</option>
-    </select>
-  </div>
-
-  <!-- ORDER TABLE -->
-  <table>
-    <thead>
-      <tr>
-        <th>Trader</th>
-        <th>Price</th>
-        <th>Limits</th>
-        <th>Payment</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Whytegod-Desk</td>
-        <td class="buy">$1.01</td>
-        <td>$50 – $5,000</td>
-        <td>Bank Transfer</td>
-        <td><a class="btn buy" href="#">BUY</a></td>
-      </tr>
-
-      <tr>
-        <td>Trusted-Node</td>
-        <td class="buy">$1.02</td>
-        <td>$100 – $10,000</td>
-        <td>Mobile Money</td>
-        <td><a class="btn buy" href="#">BUY</a></td>
-      </tr>
-
-      <tr>
-        <td>Whytegod-OTC</td>
-        <td class="sell">$0.99</td>
-        <td>$200 – $20,000</td>
-        <td>Bank Transfer</td>
-        <td><a class="btn sell" href="#">SELL</a></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <!-- NOTICE -->
-  <div class="notice">
-    ⚠️ This P2P interface is currently in MVP mode.
-    Trade execution, escrow, and dispute resolution
-    will be enabled in the next phase.
-  </div>
-
-</div>
-
-<footer>
-  © 2026 Whytegod — P2P Infrastructure Layer
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Whytegod. All rights reserved.
+  </footer>
 
 </body>
 </html>
