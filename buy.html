@@ -31,7 +31,6 @@
 
     h1 {
       text-align: center;
-      margin-bottom: 20px;
     }
 
     label {
@@ -59,10 +58,6 @@
       border-radius: 8px;
       cursor: pointer;
     }
-
-    button:hover {
-      opacity: 0.9;
-    }
   </style>
 </head>
 
@@ -71,7 +66,10 @@
     <img src="logo.png" alt="Whytegod Logo">
     <h1>Buy Crypto</h1>
 
-    <form action="mailto:whytegodtrade@gmail.com" method="post" enctype="text/plain">
+    <form action="mailto:whytegodtrade@gmail.com?subject=Buy%20Order%20-%20Whytegod"
+          method="post"
+          enctype="text/plain"
+          onsubmit="setTimeout(()=>{window.location.href='success.html'},1000);">
 
       <label>Asset</label>
       <select name="Asset">
@@ -90,7 +88,6 @@
       <input type="email" name="Customer Email" placeholder="you@email.com">
 
       <button type="submit">Submit Buy Order</button>
-
     </form>
   </div>
 </body>
