@@ -1,0 +1,14 @@
+{
+  "intent_id": "intent-001",
+  "requester": "user_0xA9F3",
+  "asset": "USDT",
+  "amount": 5000,
+  "constraints": {
+    "max_slippage": "0.5%",
+    "execution_speed": "normal",
+    "preferred_route": "p2p"
+  },
+  "risk_profile": "low",
+  "destination": "wallet_0xF91D",
+  "expiry": "2026-12-31T23:59:59Z"
+}
