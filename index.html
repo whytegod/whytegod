@@ -5,11 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Whytegod Trade | Buy & Sell Crypto P2P</title>
 
-  <!-- BASIC SEO -->
-  <meta name="description" content="Whytegod Trade – Trusted P2P crypto exchange. Buy and sell USDT, BTC, and more securely." />
-  <meta name="keywords" content="Whytegod, P2P crypto, Buy USDT, Sell USDT, Crypto Exchange" />
+  <meta name="description" content="Whytegod Trade – Trusted P2P crypto exchange. Buy and sell USDT, BTC and more securely." />
 
-  <!-- SIMPLE STYLING -->
   <style>
     body {
       margin: 0;
@@ -38,22 +35,45 @@
 
     .container {
       padding: 40px 20px;
-      max-width: 600px;
+      max-width: 700px;
       margin: auto;
     }
 
-    .action-box {
+    .box {
       background: #102a44;
       border-radius: 12px;
-      padding: 30px 20px;
+      padding: 25px 20px;
+      margin-bottom: 30px;
       box-shadow: 0 0 15px rgba(0,0,0,0.4);
     }
 
-    .action-box h2 {
+    .box h2 {
       margin-bottom: 20px;
       font-size: 22px;
     }
 
+    /* PRICE BOARD */
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px;
+      background: #0b1f33;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .buy {
+      color: #1fbf75;
+      font-weight: bold;
+    }
+
+    .sell {
+      color: #ff4d4d;
+      font-weight: bold;
+    }
+
+    /* BUTTONS */
     .btn {
       display: block;
       width: 100%;
@@ -85,10 +105,10 @@
     }
 
     .trust {
-      margin-top: 30px;
       font-size: 14px;
       color: #b9c6d4;
       line-height: 1.6;
+      margin-top: 15px;
     }
 
     footer {
@@ -108,10 +128,34 @@
     <p>Trusted P2P Crypto Buy & Sell Platform</p>
   </header>
 
-  <!-- MAIN CONTENT -->
   <div class="container">
-    <div class="action-box">
-      <h2>Buy or Sell Crypto Instantly</h2>
+
+    <!-- PRICE DISPLAY SECTION -->
+    <div class="box">
+      <h2>Today’s P2P Rates</h2>
+
+      <!-- EDIT PRICES HERE ONLY -->
+      <div class="price-row">
+        <span>USDT</span>
+        <span class="buy">Buy: ₦1,450</span>
+        <span class="sell">Sell: ₦1,420</span>
+      </div>
+
+      <div class="price-row">
+        <span>BTC</span>
+        <span class="buy">Buy: Market Rate</span>
+        <span class="sell">Sell: Market Rate</span>
+      </div>
+
+      <div class="trust">
+        Rates are subject to market movement.<br>
+        Locked after order confirmation.
+      </div>
+    </div>
+
+    <!-- ACTION SECTION -->
+    <div class="box">
+      <h2>Place an Order</h2>
 
       <!-- BUY BUTTON -->
       <a
@@ -132,17 +176,17 @@
       </a>
 
       <div class="trust">
-        ✔ Fast processing<br />
-        ✔ Secure P2P transactions<br />
-        ✔ Manual verification for safety
+        ✔ Secure manual verification<br>
+        ✔ Fast processing<br>
+        ✔ Trusted P2P service
       </div>
     </div>
+
   </div>
 
-  <!-- FOOTER -->
   <footer>
-    © 2026 Whytegod Trade. All rights reserved.<br />
-    This platform operates as a peer-to-peer crypto service.
+    © 2026 Whytegod Trade. All rights reserved.<br>
+    Peer-to-peer crypto exchange service.
   </footer>
 
 </body>
