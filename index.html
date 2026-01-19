@@ -1,68 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Whytegod — Secure P2P Infrastructure</title>
+  <meta charset="UTF-8">
+  <title>Whytegod P2P</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- FAVICON -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-  <!-- BASIC SEO -->
-  <meta name="description" content="Whytegod is a secure peer-to-peer infrastructure focused on trust, execution, and financial sovereignty." />
-  <meta name="author" content="Whytegod" />
+  <link rel="icon" href="favicon.ico">
 
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #0b1d2a, #06121c);
+      background: #0b1d2a;
       color: #ffffff;
-      text-align: center;
     }
 
     header {
-      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      background: #06121c;
+      border-bottom: 1px solid #112233;
     }
 
-    .logo {
-      width: 140px;
-      max-width: 80%;
-      margin-bottom: 20px;
+    header img {
+      height: 42px;
+      margin-right: 12px;
     }
 
-    h1 {
-      font-size: 2rem;
-      margin: 10px 0;
+    header h1 {
+      font-size: 1.2rem;
+      margin: 0;
       letter-spacing: 1px;
     }
 
-    p {
-      max-width: 600px;
-      margin: 0 auto 30px;
-      line-height: 1.6;
-      color: #d0d8e0;
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
-    .cta {
-      display: inline-block;
-      padding: 14px 28px;
-      background-color: #1f6feb;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 6px;
+    .tabs {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      flex: 1;
+      padding: 12px;
+      text-align: center;
+      background: #112233;
+      cursor: pointer;
       font-weight: bold;
     }
 
-    .cta:hover {
-      background-color: #388bfd;
+    .tab.active {
+      background: #1f6feb;
+    }
+
+    .filters {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    select {
+      padding: 10px;
+      background: #06121c;
+      color: #fff;
+      border: 1px solid #223344;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #223344;
+      text-align: left;
+    }
+
+    th {
+      color: #9fb3c8;
+      font-size: 0.9rem;
+    }
+
+    .buy {
+      color: #2ecc71;
+      font-weight: bold;
+    }
+
+    .sell {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .btn.buy {
+      background: #2ecc71;
+    }
+
+    .btn.sell {
+      background: #e74c3c;
+    }
+
+    .notice {
+      margin-top: 30px;
+      padding: 15px;
+      background: #06121c;
+      border-left: 4px solid #1f6feb;
+      color: #c9d1d9;
     }
 
     footer {
-      margin-top: 60px;
+      text-align: center;
       padding: 20px;
       font-size: 0.85rem;
       color: #8b949e;
@@ -72,23 +134,91 @@
 
 <body>
 
-  <header>
-    <!-- LOGO (DO NOT RENAME logo.png) -->
-    <img src="logo.png" alt="Whytegod Logo" class="logo">
+<header>
+  <img src="logo.png" alt="Whytegod Logo">
+  <h1>WHYTEGOD P2P</h1>
+</header>
 
-    <h1>WHYTEGOD</h1>
+<div class="container">
 
-    <p>
-      A secure peer-to-peer execution layer designed for trust,
-      governance, and controlled financial interaction.
-    </p>
+  <!-- BUY / SELL -->
+  <div class="tabs">
+    <div class="tab active">BUY</div>
+    <div class="tab">SELL</div>
+  </div>
 
-    <a href="README.md" class="cta">View Documentation</a>
-  </header>
+  <!-- FILTERS -->
+  <div class="filters">
+    <select>
+      <option>USDT</option>
+      <option>BTC</option>
+      <option>ETH</option>
+    </select>
 
-  <footer>
-    © 2026 Whytegod. All rights reserved.
-  </footer>
+    <select>
+      <option>Bank Transfer</option>
+      <option>Mobile Money</option>
+      <option>Cash</option>
+    </select>
+
+    <select>
+      <option>All Regions</option>
+      <option>Africa</option>
+      <option>Asia</option>
+      <option>Europe</option>
+    </select>
+  </div>
+
+  <!-- ORDER TABLE -->
+  <table>
+    <thead>
+      <tr>
+        <th>Trader</th>
+        <th>Price</th>
+        <th>Limits</th>
+        <th>Payment</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Whytegod-Desk</td>
+        <td class="buy">$1.01</td>
+        <td>$50 – $5,000</td>
+        <td>Bank Transfer</td>
+        <td><a class="btn buy" href="#">BUY</a></td>
+      </tr>
+
+      <tr>
+        <td>Trusted-Node</td>
+        <td class="buy">$1.02</td>
+        <td>$100 – $10,000</td>
+        <td>Mobile Money</td>
+        <td><a class="btn buy" href="#">BUY</a></td>
+      </tr>
+
+      <tr>
+        <td>Whytegod-OTC</td>
+        <td class="sell">$0.99</td>
+        <td>$200 – $20,000</td>
+        <td>Bank Transfer</td>
+        <td><a class="btn sell" href="#">SELL</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- NOTICE -->
+  <div class="notice">
+    ⚠️ This P2P interface is currently in MVP mode.
+    Trade execution, escrow, and dispute resolution
+    will be enabled in the next phase.
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Whytegod — P2P Infrastructure Layer
+</footer>
 
 </body>
 </html>
