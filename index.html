@@ -1,193 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Whytegod Trade | Buy & Sell Crypto P2P</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whytegod Exchange</title>
 
-  <meta name="description" content="Whytegod Trade – Trusted P2P crypto exchange. Buy and sell USDT, BTC and more securely." />
+    <!-- SEO -->
+    <meta name="description" content="Whytegod Exchange - Fast, Secure Buy & Sell of Digital Assets">
+    <meta name="keywords" content="Crypto, Buy Bitcoin, Sell Bitcoin, P2P, Whytegod">
+    <meta name="author" content="Whytegod">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0b1c2d;
-      color: #ffffff;
-      text-align: center;
-    }
+    <!-- Styles -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b1c2d;
+            color: #ffffff;
+            text-align: center;
+        }
 
-    header {
-      padding: 40px 20px;
-      background: #081625;
-    }
+        header {
+            background: #081521;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
 
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-      color: #4da3ff;
-    }
+        header img {
+            max-width: 120px;
+            margin-bottom: 10px;
+        }
 
-    header p {
-      margin-top: 10px;
-      font-size: 16px;
-      color: #cfd9e3;
-    }
+        h1 {
+            margin: 10px 0 5px;
+            font-size: 28px;
+        }
 
-    .container {
-      padding: 40px 20px;
-      max-width: 700px;
-      margin: auto;
-    }
+        p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
 
-    .box {
-      background: #102a44;
-      border-radius: 12px;
-      padding: 25px 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
-    }
+        .container {
+            padding: 40px 20px;
+        }
 
-    .box h2 {
-      margin-bottom: 20px;
-      font-size: 22px;
-    }
+        .buttons {
+            margin-top: 30px;
+        }
 
-    /* PRICE BOARD */
-    .price-row {
-      display: flex;
-      justify-content: space-between;
-      padding: 12px;
-      background: #0b1f33;
-      border-radius: 8px;
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
+        .btn {
+            display: inline-block;
+            margin: 15px;
+            padding: 18px 35px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
 
-    .buy {
-      color: #1fbf75;
-      font-weight: bold;
-    }
+        .buy {
+            background: #00c853;
+            color: #ffffff;
+        }
 
-    .sell {
-      color: #ff4d4d;
-      font-weight: bold;
-    }
+        .buy:hover {
+            background: #00a844;
+        }
 
-    /* BUTTONS */
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 15px;
-      margin: 15px 0;
-      font-size: 18px;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      color: #ffffff;
-    }
+        .sell {
+            background: #d50000;
+            color: #ffffff;
+        }
 
-    .btn-buy {
-      background: #1fbf75;
-    }
+        .sell:hover {
+            background: #b00000;
+        }
 
-    .btn-buy:hover {
-      background: #17a866;
-    }
-
-    .btn-sell {
-      background: #ff4d4d;
-    }
-
-    .btn-sell:hover {
-      background: #e63c3c;
-    }
-
-    .trust {
-      font-size: 14px;
-      color: #b9c6d4;
-      line-height: 1.6;
-      margin-top: 15px;
-    }
-
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      font-size: 13px;
-      color: #9fb0c3;
-    }
-  </style>
+        footer {
+            margin-top: 60px;
+            padding: 15px;
+            background: #081521;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>Whytegod Trade</h1>
-    <p>Trusted P2P Crypto Buy & Sell Platform</p>
-  </header>
+    <!-- HEADER -->
+    <header>
+        <!-- Replace logo path if needed -->
+        <img src="logo.png" alt="Whytegod Logo">
+        <h1>Whytegod Exchange</h1>
+        <p>Fast • Secure • Trusted Digital Asset Trading</p>
+    </header>
 
-  <div class="container">
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <h2>Buy & Sell Crypto Instantly</h2>
+        <p>Click a button below to start your transaction immediately.</p>
 
-    <!-- PRICE DISPLAY SECTION -->
-    <div class="box">
-      <h2>Today’s P2P Rates</h2>
+        <div class="buttons">
+            <!-- BUY BUTTON -->
+            <a href="https://forms.gle/v6hwfV7qFcT1Mk1G7" 
+               class="btn buy" 
+               target="_blank">
+               BUY CRYPTO
+            </a>
 
-      <!-- EDIT PRICES HERE ONLY -->
-      <div class="price-row">
-        <span>USDT</span>
-        <span class="buy">Buy: ₦1,450</span>
-        <span class="sell">Sell: ₦1,420</span>
-      </div>
-
-      <div class="price-row">
-        <span>BTC</span>
-        <span class="buy">Buy: Market Rate</span>
-        <span class="sell">Sell: Market Rate</span>
-      </div>
-
-      <div class="trust">
-        Rates are subject to market movement.<br>
-        Locked after order confirmation.
-      </div>
+            <!-- SELL BUTTON -->
+            <a href="https://forms.gle/t9xVX6pm6CvVifg27" 
+               class="btn sell" 
+               target="_blank">
+               SELL CRYPTO
+            </a>
+        </div>
     </div>
 
-    <!-- ACTION SECTION -->
-    <div class="box">
-      <h2>Place an Order</h2>
-
-      <!-- BUY BUTTON -->
-      <a
-        href="https://forms.gle/v6hwfV7qFcT1Mk1G7"
-        target="_blank"
-        class="btn btn-buy"
-      >
-        BUY CRYPTO
-      </a>
-
-      <!-- SELL BUTTON -->
-      <a
-        href="https://forms.gle/t9xVX6pm6CvVifg27"
-        target="_blank"
-        class="btn btn-sell"
-      >
-        SELL CRYPTO
-      </a>
-
-      <div class="trust">
-        ✔ Secure manual verification<br>
-        ✔ Fast processing<br>
-        ✔ Trusted P2P service
-      </div>
-    </div>
-
-  </div>
-
-  <footer>
-    © 2026 Whytegod Trade. All rights reserved.<br>
-    Peer-to-peer crypto exchange service.
-  </footer>
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Whytegod Exchange. All Rights Reserved.
+    </footer>
 
 </body>
 </html>
