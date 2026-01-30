@@ -2,161 +2,268 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Whytegod — Governance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Governance — Whytegod Protocol</title>
 
-  <meta name="description" content="Governance and change management for the Whytegod protocol." />
-  <link rel="icon" href="favicon.png" />
+  <meta name="description" content="Governance model and power structure of the Whytegod Protocol." />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #0b0b0b;
-      color: #eaeaea;
+      background-color: #0b0f14;
+      color: #e6e6e6;
       line-height: 1.7;
     }
 
+    header {
+      padding: 20px 24px;
+      border-bottom: 1px solid #1f2933;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 32px;
+    }
+
+    nav a {
+      margin-left: 18px;
+      text-decoration: none;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
     main {
-      max-width: 820px;
-      margin: auto;
-      padding: 48px 20px;
+      max-width: 880px;
+      margin: 90px auto;
+      padding: 0 24px;
     }
 
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
+      font-size: 42px;
+      font-weight: 600;
+      margin-bottom: 24px;
     }
 
     h2 {
-      margin-top: 3rem;
-      font-size: 1.3rem;
+      margin-top: 64px;
+      font-size: 26px;
+      border-bottom: 1px solid #1f2933;
+      padding-bottom: 10px;
     }
 
     p {
-      max-width: 720px;
+      font-size: 18px;
+      color: #d1d5db;
+      margin-top: 18px;
     }
 
-    ul {
-      padding-left: 1.2rem;
+    .rule {
+      margin-top: 32px;
+      padding: 20px;
+      background: #0f172a;
+      border-left: 4px solid #38bdf8;
     }
 
-    li {
-      margin-bottom: 0.4rem;
-    }
-
-    a {
-      color: #9ad1ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    .rule strong {
+      color: #bae6fd;
     }
 
     footer {
-      margin-top: 4rem;
-      font-size: 0.85rem;
-      color: #888;
+      margin-top: 140px;
+      padding: 24px;
+      border-top: 1px solid #1f2933;
+      font-size: 14px;
+      color: #9ca3af;
+      text-align: center;
+    }
+
+    footer a {
+      color: #9ca3af;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      color: #ffffff;
     }
   </style>
 </head>
 
 <body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="logo.png" alt="Whytegod Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="intent.html">Intent</a>
+      <a href="flow.html">Flow</a>
+      <a href="security.html">Security</a>
+      <a href="governance.html">Governance</a>
+      <a href="manifesto.html">Manifesto</a>
+      <a href="reference.html">Reference</a>
+    </nav>
+  </header>
+
+  <!-- CONTENT -->
   <main>
 
     <h1>Governance</h1>
 
     <p>
-      This document defines how the Whytegod protocol evolves over time.
-      Governance prioritizes stability, predictability, and minimal change.
+      Whytegod governance is designed to prevent capture,
+      not to maximize participation theater.
     </p>
 
     <p>
-      Whytegod is designed to be conservative by default.
-      Changes are expected to be rare, deliberate, and well-justified.
+      Power exists only where it is unavoidable —
+      and is removed as soon as it is no longer required.
     </p>
 
-    <h2>Principles</h2>
-
-    <ul>
-      <li>Protocol stability over feature velocity</li>
-      <li>Backward compatibility whenever possible</li>
-      <li>Explicit, documented changes</li>
-      <li>No emergency or unilateral upgrades</li>
-    </ul>
-
-    <h2>Change Proposals</h2>
+    <h2>Foundational Principle</h2>
 
     <p>
-      All protocol changes MUST be proposed in writing.
-      Proposals SHOULD include:
-    </p>
-
-    <ul>
-      <li>clear motivation</li>
-      <li>technical specification</li>
-      <li>impact analysis</li>
-      <li>security considerations</li>
-    </ul>
-
-    <p>
-      Proposals are reviewed publicly and discussed openly.
-    </p>
-
-    <h2>Acceptance Criteria</h2>
-
-    <p>
-      A proposal MAY be accepted if it:
-    </p>
-
-    <ul>
-      <li>preserves protocol invariants</li>
-      <li>does not introduce hidden trust assumptions</li>
-      <li>improves clarity, safety, or interoperability</li>
-    </ul>
-
-    <p>
-      Acceptance does not imply immediate implementation.
-    </p>
-
-    <h2>Versioning</h2>
-
-    <p>
-      Protocol versions are explicit and immutable once released.
-      Implementations may choose which versions to support.
+      Governance must never override intent correctness.
     </p>
 
     <p>
-      Deprecated behavior SHOULD remain documented.
+      If governance can arbitrarily change outcomes,
+      the protocol has already failed.
     </p>
 
-    <h2>Non-Goals</h2>
+    <h2>Initial Phase</h2>
 
     <p>
-      Governance does NOT include:
+      In the early phase, governance is minimal and operational.
     </p>
-
-    <ul>
-      <li>token voting</li>
-      <li>profit distribution</li>
-      <li>operational control of implementations</li>
-    </ul>
-
-    <h2>Final Authority</h2>
 
     <p>
-      The protocol specification itself is the final authority.
-      No individual, organization, or implementation has special control.
+      Responsibilities include:
     </p>
 
-    <footer>
-      <p>
-        This document is part of the Whytegod protocol specification.
-      </p>
-    </footer>
+    <p>
+      • deploying reference implementations<br/>
+      • fixing critical protocol defects<br/>
+      • coordinating upgrades<br/>
+      • responding to existential threats
+    </p>
+
+    <p>
+      Governance at this stage is constrained,
+      transparent, and temporary.
+    </p>
+
+    <h2>Rules of Authority</h2>
+
+    <div class="rule">
+      <strong>1. No Outcome Control</strong><br/>
+      Governance cannot modify or reverse valid executions.
+    </div>
+
+    <div class="rule">
+      <strong>2. No Fund Custody</strong><br/>
+      Governance does not custody user funds.
+    </div>
+
+    <div class="rule">
+      <strong>3. No Arbitrary Censorship</strong><br/>
+      Valid intents cannot be blocked without protocol-level justification.
+    </div>
+
+    <div class="rule">
+      <strong>4. Explicit Scope</strong><br/>
+      All powers are explicitly defined and limited.
+    </div>
+
+    <h2>Decentralization Path</h2>
+
+    <p>
+      Governance power is designed to decay over time.
+    </p>
+
+    <p>
+      As the protocol stabilizes:
+    </p>
+
+    <p>
+      • parameters become immutable<br/>
+      • upgrades require broader consensus<br/>
+      • operational roles are automated or removed
+    </p>
+
+    <p>
+      The end state is governance irrelevance.
+    </p>
+
+    <h2>Token Role (If Applicable)</h2>
+
+    <p>
+      Any governance token, if introduced,
+      exists to coordinate upgrades —
+      not to speculate on control.
+    </p>
+
+    <p>
+      Token ownership does not imply ownership of the protocol.
+    </p>
+
+    <p>
+      The protocol is not a company.
+    </p>
+
+    <h2>What Governance Cannot Do</h2>
+
+    <p>
+      Governance cannot:
+    </p>
+
+    <p>
+      • confiscate funds<br/>
+      • rewrite history<br/>
+      • favor specific actors<br/>
+      • change intent semantics retroactively
+    </p>
+
+    <p>
+      Any governance system capable of these actions
+      is a centralized system by definition.
+    </p>
+
+    <h2>Final State</h2>
+
+    <p>
+      The ideal governance model is boring.
+    </p>
+
+    <p>
+      No drama.
+      No votes for attention.
+      No personalities.
+    </p>
+
+    <p>
+      When governance fades into the background,
+      the protocol has succeeded.
+    </p>
 
   </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© Whytegod Protocol</span> |
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="trust.html">Trust</a>
+  </footer>
+
 </body>
 </html>
