@@ -6,7 +6,6 @@
   <title>Whytegod</title>
 
   <style>
-    /* RESET */
     * {
       margin: 0;
       padding: 0;
@@ -21,46 +20,30 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      animation: breathe 12s ease-in-out infinite;
-    }
-
-    @keyframes breathe {
-      0% { background-position: 50% 0%; }
-      50% { background-position: 50% 100%; }
-      100% { background-position: 50% 0%; }
     }
 
     .container {
-      max-width: 780px;
+      max-width: 760px;
       padding: 60px 24px;
       text-align: center;
-      animation: fadeIn 1.8s ease forwards;
+      animation: fadeIn 1.5s ease forwards;
     }
 
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(12px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     h1 {
       font-size: 3rem;
-      letter-spacing: 1px;
       margin-bottom: 20px;
-      color: #ffffff;
-      text-shadow: 0 0 20px rgba(0, 255, 204, 0.15);
     }
 
     p {
       font-size: 1.05rem;
       line-height: 1.8;
+      margin-bottom: 20px;
       color: #d8d8d8;
-      margin-bottom: 22px;
     }
 
     .accent {
@@ -68,61 +51,34 @@
       font-weight: 600;
     }
 
-    .pulse {
+    .link {
       display: inline-block;
-      animation: pulse 3s ease-in-out infinite;
+      margin-top: 30px;
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: 600;
     }
 
-    @keyframes pulse {
-      0% { opacity: 0.6; }
-      50% { opacity: 1; }
-      100% { opacity: 0.6; }
-    }
-
-    .footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      opacity: 0.6;
-    }
-
-    /* Optional hover magic */
-    .container:hover h1 {
-      text-shadow: 0 0 28px rgba(0, 255, 204, 0.35);
-      transition: 0.4s ease;
+    .link:hover {
+      opacity: 0.7;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
+    <h1>Whytegod</h1>
 
-    <h1 class="pulse">Whytegod</h1>
-
-    <p>
-      A protocol for <span class="accent">intent</span>,
-      not control.
-    </p>
+    <p>A protocol for <span class="accent">intent</span>, not control.</p>
 
     <p>
-      Built for coordination without permission.
+      Built for alignment without permission.<br>
       Designed to evolve without ownership.
     </p>
 
-    <p>
-      No hype.  
-      No pressure.  
-      Just alignment.
-    </p>
+    <p>No hype. No pressure. Just signal.</p>
 
-    <p class="accent">
-      Whytegod is infrastructure — quietly alive.
-    </p>
-
-    <div class="footer">
-      This is not a launch.  
-      It’s a signal.
-    </div>
-
+    <a class="link" href="intent.html">Begin with Intent →</a>
   </div>
 </body>
 </html>
