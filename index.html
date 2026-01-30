@@ -1,84 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Whytegod</title>
-
+  <meta charset="UTF-8">
+  <title>Whytegod Protocol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      min-height: 100vh;
-      background: radial-gradient(circle at top, #111 0%, #000 60%);
-      color: #f2f2f2;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0b0b0b;
+      color: #ffffff;
+    }
+    nav {
+      background: #111;
+      padding: 12px;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 1px solid #222;
     }
-
-    .container {
-      max-width: 760px;
-      padding: 60px 24px;
-      text-align: center;
-      animation: fadeIn 1.5s ease forwards;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      margin-bottom: 20px;
-      color: #d8d8d8;
-    }
-
-    .accent {
-      color: #00ffcc;
-      font-weight: 600;
-    }
-
-    .link {
-      display: inline-block;
-      margin-top: 30px;
+    nav a {
       color: #00ffcc;
       text-decoration: none;
-      font-weight: 600;
+      font-size: 14px;
     }
-
-    .link:hover {
-      opacity: 0.7;
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 24px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 {
+      color: #00ffcc;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="intent.html">Intent</a>
+    <a href="flow.html">Flow</a>
+    <a href="governance.html">Governance</a>
+    <a href="manifesto.html">Manifesto</a>
+    <a href="reference.html">Reference</a>
+    <a href="security.html">Security</a>
+    <a href="trust.html">Trust</a>
+    <a href="token.html">Token</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
     <h1>Whytegod</h1>
-
-    <p>A protocol for <span class="accent">intent</span>, not control.</p>
-
     <p>
-      Built for alignment without permission.<br>
-      Designed to evolve without ownership.
+      Whytegod is an AI-first, peer-to-peer financial execution protocol
+      built on the Open Financial Network (OFN).
     </p>
 
-    <p>No hype. No pressure. Just signal.</p>
+    <p>
+      This site documents the protocol architecture, intent model,
+      governance, execution flow, and trust assumptions.
+    </p>
 
-    <a class="link" href="intent.html">Begin with Intent →</a>
-  </div>
+    <p>
+      Whytegod is not an application.<br>
+      It is a protocol specification.
+    </p>
+  </main>
+
 </body>
 </html>
