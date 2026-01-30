@@ -2,81 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Whytegod Protocol</title>
-
-  <!-- SEO / Identity -->
-  <meta name="description" content="Whytegod is an AI-first, peer-to-peer financial execution protocol built on the Open Financial Network (OFN)." />
-  <meta name="keywords" content="Whytegod, protocol, decentralized finance, intent-based execution, OFN" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png" />
-
-  <!-- Minimal Styling -->
+  <title>Whytegod — Intent-Based Open Financial Protocol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Whytegod is an intent-based, peer-to-peer financial protocol that lets people say what they want to do — not how to do it." />
+  <link rel="icon" href="favicon.png" />
   <style>
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
-      background: #0b0b0b;
-      color: #eaeaea;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0b0f14;
+      color: #e6e6e6;
       line-height: 1.6;
     }
-
-    header, section, footer {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
+    header {
+      padding: 3rem 1.5rem;
+      text-align: center;
     }
-
-    nav {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      font-size: 0.9rem;
-    }
-
-    nav a {
-      color: #9ad1ff;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    h1, h2, h3 {
-      font-weight: 600;
-    }
-
     h1 {
-      font-size: 2.4rem;
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
-
-    .subtitle {
-      font-size: 1.1rem;
-      color: #b5b5b5;
+    p {
+      max-width: 700px;
+      margin: 1rem auto;
+      font-size: 1.05rem;
+      color: #cfcfcf;
     }
-
-    .divider {
-      margin: 3rem 0;
-      border-top: 1px solid #222;
+    nav {
+      margin-top: 2rem;
     }
-
-    .pill {
+    nav a {
       display: inline-block;
-      padding: 0.3rem 0.7rem;
-      border: 1px solid #333;
-      border-radius: 999px;
-      font-size: 0.8rem;
-      margin-right: 0.5rem;
-      color: #aaa;
+      margin: 0.4rem;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #0b0f14;
+      background: #e6e6e6;
+      font-weight: 500;
     }
-
+    nav a:hover {
+      background: #bcdcff;
+    }
+    section {
+      padding: 2rem 1.5rem;
+      max-width: 800px;
+      margin: auto;
+    }
     footer {
-      font-size: 0.8rem;
-      color: #777;
+      padding: 2rem 1.5rem;
       text-align: center;
+      font-size: 0.85rem;
+      color: #888;
     }
   </style>
 </head>
@@ -84,91 +61,91 @@
 <body>
 
 <header>
+  <h1>Whytegod</h1>
+  <p>
+    A calm, open financial protocol where people say <em>what they want</em> —
+    and the network figures out <em>how it happens</em>.
+  </p>
+
   <nav>
-    <a href="index.html">Index</a>
     <a href="intent.html">Intent</a>
     <a href="flow.html">Flow</a>
-    <a href="security.html">Security</a>
     <a href="governance.html">Governance</a>
+    <a href="security.html">Security</a>
+    <a href="trust.html">Trust</a>
     <a href="manifesto.html">Manifesto</a>
-    <a href="reference.html">Reference</a>
   </nav>
 </header>
 
 <section>
-  <h1>Whytegod</h1>
-  <p class="subtitle">
-    An AI-first, peer-to-peer financial execution protocol.
-  </p>
-
-  <div class="divider"></div>
-
+  <h2>What is Whytegod?</h2>
   <p>
-    Whytegod allows humans to express <strong>financial intent</strong>.
-    The network determines <em>how execution occurs</em>.
+    Whytegod is not an app.
+    It’s not a wallet.
+    It’s not a trading platform.
   </p>
-
   <p>
-    Users define <strong>what they want</strong>.<br/>
-    Systems compete to decide <strong>how it happens</strong>.
-  </p>
-
-  <div class="divider"></div>
-
-  <p>
-    Whytegod is <strong>not</strong> an application.<br/>
-    Whytegod is <strong>not</strong> an exchange.<br/>
-    Whytegod is <strong>not</strong> a company.
-  </p>
-
-  <p>
-    <strong>Whytegod is a protocol specification.</strong>
-  </p>
-
-  <div class="divider"></div>
-
-  <span class="pill">No custody</span>
-  <span class="pill">No accounts</span>
-  <span class="pill">No platform control</span>
-  <span class="pill">Open execution</span>
-</section>
-
-<section>
-  <h2>Purpose</h2>
-
-  <p>
-    Modern financial systems force users to manage execution complexity:
-  </p>
-
-  <ul>
-    <li>Routing</li>
-    <li>Timing</li>
-    <li>Counterparties</li>
-    <li>Trust assumptions</li>
-  </ul>
-
-  <p>
-    Whytegod separates <strong>intent</strong> from <strong>execution</strong>,
-    allowing systems to optimize outcomes without owning the user.
+    Whytegod is a <strong>protocol</strong> — a shared set of rules that lets people
+    express financial intent in plain terms, without needing to understand
+    blockchains, contracts, or execution logic.
   </p>
 </section>
 
 <section>
-  <h2>Design Principles</h2>
+  <h2>Why it exists</h2>
+  <p>
+    Most financial systems force people to think like machines.
+    Addresses. Gas fees. Slippage. Order types.
+  </p>
+  <p>
+    Humans don’t think that way.
+  </p>
+  <p>
+    Whytegod flips the model:
+    <br />
+    <strong>You say what you want. The system handles the rest.</strong>
+  </p>
+</section>
 
-  <ul>
-    <li>Declarative intent, not imperative commands</li>
-    <li>Decentralized execution competition</li>
-    <li>Cryptographic verification over trust</li>
-    <li>Protocol rules over platform discretion</li>
-  </ul>
+<section>
+  <h2>Who it’s for</h2>
+  <p>
+    Whytegod is built for everyday people, builders, and institutions —
+    anyone who wants financial actions to feel natural, safe, and understandable.
+  </p>
+  <p>
+    You don’t need permission.
+    You don’t need custody.
+    You don’t need to trust anyone.
+  </p>
+</section>
+
+<section>
+  <h2>How it works (at a glance)</h2>
+  <p>
+    1. A user expresses an intent (what they want to happen).
+    <br />
+    2. The network evaluates valid ways to fulfill it.
+    <br />
+    3. Execution happens transparently and verifiably.
+  </p>
+  <p>
+    No centralized control. No hidden logic. No silent custody.
+  </p>
+</section>
+
+<section>
+  <h2>Open by design</h2>
+  <p>
+    Whytegod is built on the Open Financial Network (OFN).
+    Its rules are public.
+    Its logic is inspectable.
+    Its future is governed, not owned.
+  </p>
 </section>
 
 <footer>
-  <p>
-    Whytegod Protocol — Open Financial Network aligned<br/>
-    This site documents a protocol, not a product.
-  </p>
+  © Whytegod Protocol — Open, calm, and human-first.
 </footer>
 
 </body>
