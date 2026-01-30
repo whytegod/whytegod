@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Privacy — Whytegod Protocol</title>
 
-  <meta name="description" content="Whytegod Protocol privacy principles. Minimal data, no surveillance, no profiling." />
-
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta name="description" content="Whytegod does not collect data because it does not need it." />
 
   <style>
     body {
@@ -19,42 +17,30 @@
     }
 
     header {
-      padding: 20px 24px;
+      padding: 24px;
       border-bottom: 1px solid #1f2933;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
 
-    header img {
-      height: 32px;
-    }
-
-    nav a {
-      margin-left: 18px;
-      text-decoration: none;
+    header a {
       color: #9ca3af;
+      text-decoration: none;
       font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #ffffff;
     }
 
     main {
       max-width: 900px;
-      margin: 100px auto;
+      margin: 80px auto 0;
       padding: 0 24px;
     }
 
     h1 {
-      font-size: 44px;
+      font-size: 42px;
       font-weight: 600;
       margin-bottom: 30px;
     }
 
     h2 {
-      margin-top: 70px;
+      margin-top: 80px;
       font-size: 26px;
       font-weight: 500;
       border-bottom: 1px solid #1f2933;
@@ -65,22 +51,17 @@
       font-size: 18px;
       color: #d1d5db;
       margin-top: 22px;
+      max-width: 780px;
     }
 
-    ul {
-      margin-top: 18px;
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 12px;
-      font-size: 17px;
-      color: #d1d5db;
+    .quiet {
+      color: #9ca3af;
+      font-size: 15px;
     }
 
     footer {
       margin-top: 160px;
-      padding: 24px;
+      padding: 30px 24px;
       border-top: 1px solid #1f2933;
       font-size: 14px;
       color: #9ca3af;
@@ -90,7 +71,7 @@
     footer a {
       color: #9ca3af;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 12px;
     }
 
     footer a:hover {
@@ -101,150 +82,119 @@
 
 <body>
 
-  <!-- HEADER -->
   <header>
-    <img src="logo.png" alt="Whytegod Logo" />
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="intent.html">Intent</a>
-      <a href="flow.html">Flow</a>
-      <a href="security.html">Security</a>
-      <a href="governance.html">Governance</a>
-      <a href="manifesto.html">Manifesto</a>
-      <a href="reference.html">Reference</a>
-      <a href="privacy.html">Privacy</a>
-    </nav>
+    <a href="index.html">← Back to Home</a>
   </header>
 
-  <!-- CONTENT -->
   <main>
 
     <h1>Privacy</h1>
 
+    <p class="quiet">
+      Whytegod does not observe users.
+    </p>
+
+    <h2>No Data Collection</h2>
+
     <p>
-      Privacy is not a feature of Whytegod.
-      It is a constraint.
+      Whytegod does not collect personal data,
+      behavioral data,
+      or usage metrics.
+    </p>
+
+    <p>
+      There are no accounts,
+      identifiers,
+      or profiles.
+    </p>
+
+    <h2>No Tracking</h2>
+
+    <p>
+      No cookies are used.
+    </p>
+
+    <p>
+      No analytics software is embedded.
+    </p>
+
+    <p>
+      No fingerprinting techniques are applied.
+    </p>
+
+    <h2>No Logging</h2>
+
+    <p>
+      The protocol does not log IP addresses,
+      timestamps,
+      or interaction metadata.
+    </p>
+
+    <p>
+      What is not recorded cannot be analyzed.
+    </p>
+
+    <h2>Minimal Exposure</h2>
+
+    <p>
+      Interaction with the protocol
+      requires no registration,
+      no identity,
+      and no disclosure.
+    </p>
+
+    <p>
+      Users reveal only what they choose externally.
+    </p>
+
+    <h2>Third-Party Independence</h2>
+
+    <p>
+      Whytegod does not embed third-party services.
+    </p>
+
+    <p>
+      Any external platforms accessed by users
+      operate under their own privacy terms.
+    </p>
+
+    <h2>Persistence</h2>
+
+    <p>
+      There is no user state to persist.
+    </p>
+
+    <p>
+      There is nothing to delete
+      because nothing is stored.
     </p>
 
     <h2>Principle</h2>
 
     <p>
-      Whytegod minimizes knowledge.
-      What is not collected cannot be leaked,
-      sold, requested, or abused.
-    </p>
-
-    <h2>What We Do Not Collect</h2>
-
-    <ul>
-      <li>No personal identity information</li>
-      <li>No names, emails, or phone numbers</li>
-      <li>No IP tracking or fingerprinting</li>
-      <li>No behavioral analytics</li>
-      <li>No cookies for profiling</li>
-    </ul>
-
-    <p>
-      If data is not required for the system to function,
-      it is excluded by design.
-    </p>
-
-    <h2>What the Protocol Can See</h2>
-
-    <p>
-      The protocol observes only what is mathematically necessary:
-    </p>
-
-    <ul>
-      <li>Valid inputs</li>
-      <li>Valid state transitions</li>
-      <li>Deterministic outputs</li>
-    </ul>
-
-    <p>
-      It does not interpret meaning.
-      It does not infer intent.
-    </p>
-
-    <h2>No Surveillance Model</h2>
-
-    <p>
-      Whytegod does not optimize engagement,
-      retention, or user behavior.
-    </p>
-
-    <ul>
-      <li>No dashboards watching users</li>
-      <li>No metrics measuring attention</li>
-      <li>No incentives to extract data</li>
-    </ul>
-
-    <p>
-      Observation creates power.
-      Power creates abuse.
-    </p>
-
-    <h2>Off-Chain Interaction</h2>
-
-    <p>
-      Any off-chain tools or interfaces
-      are optional and replaceable.
+      Privacy is not a feature.
     </p>
 
     <p>
-      They should be assumed untrusted.
-      Privacy depends on the protocol,
-      not the interface.
+      It is the absence of unnecessary observation.
     </p>
 
-    <h2>Responsibility of the User</h2>
+    <h2>Conclusion</h2>
 
     <p>
-      Privacy is preserved by default,
-      but cannot protect against voluntary disclosure.
-    </p>
-
-    <ul>
-      <li>Do not reuse identities.</li>
-      <li>Do not link wallets unnecessarily.</li>
-      <li>Assume public data is permanent.</li>
-    </ul>
-
-    <h2>No Privacy Promises</h2>
-
-    <p>
-      Whytegod does not promise anonymity.
+      Whytegod cannot leak data.
     </p>
 
     <p>
-      It promises restraint.
-    </p>
-
-    <p>
-      The system is designed
-      to know as little as possible,
-      forever.
-    </p>
-
-    <h2>Closing</h2>
-
-    <p>
-      Privacy is not secrecy.
-      It is silence.
-    </p>
-
-    <p>
-      Whytegod stays silent by design.
+      It does not have any.
     </p>
 
   </main>
 
-  <!-- FOOTER -->
   <footer>
-    <span>© Whytegod Protocol</span> |
-    <a href="terms.html">Terms</a>
-    <a href="privacy.html">Privacy</a>
     <a href="trust.html">Trust</a>
+    <a href="terms.html">Terms</a>
+    <a href="index.html">Home</a>
   </footer>
 
 </body>
