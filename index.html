@@ -2,55 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Whytegod — Intent-Based Open Financial Protocol</title>
+  <title>Whytegod Protocol</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Whytegod is an intent-based, peer-to-peer financial protocol that lets people say what they want to do — not how to do it." />
+  <meta name="description" content="Whytegod is a decentralized protocol for expressing human intent and executing value safely." />
   <link rel="icon" href="favicon.png" />
+
   <style>
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #0b0f14;
+      background: radial-gradient(circle at top, #111827, #0b0f14);
       color: #e6e6e6;
-      line-height: 1.6;
+      line-height: 1.75;
     }
+
     header {
-      padding: 3rem 1.5rem;
+      padding: 4rem 1.5rem 3rem;
       text-align: center;
     }
+
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 3rem;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.03em;
     }
-    p {
-      max-width: 700px;
+
+    h1 span {
+      color: #9fe0ff;
+    }
+
+    header p {
+      max-width: 780px;
       margin: 1rem auto;
-      font-size: 1.05rem;
-      color: #cfcfcf;
+      font-size: 1.15rem;
+      color: #d4d4d4;
     }
+
     nav {
-      margin-top: 2rem;
+      margin-top: 2.5rem;
     }
+
     nav a {
       display: inline-block;
       margin: 0.4rem;
-      padding: 0.6rem 1rem;
-      border-radius: 6px;
+      padding: 0.65rem 1.2rem;
+      border-radius: 8px;
       text-decoration: none;
-      color: #0b0f14;
       background: #e6e6e6;
+      color: #0b0f14;
       font-weight: 500;
     }
+
     nav a:hover {
-      background: #bcdcff;
+      background: #9fe0ff;
     }
+
     section {
-      padding: 2rem 1.5rem;
-      max-width: 800px;
+      padding: 3rem 1.5rem;
+      max-width: 960px;
       margin: auto;
     }
+
+    .card {
+      background: #111827;
+      padding: 2rem;
+      border-radius: 14px;
+      margin: 2rem 0;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #ffd479;
+    }
+
+    .card p {
+      color: #d6d6d6;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 3.5rem 1.5rem;
+    }
+
+    .cta p {
+      font-size: 1.1rem;
+      max-width: 720px;
+      margin: auto;
+    }
+
     footer {
-      padding: 2rem 1.5rem;
+      padding: 2.5rem 1.5rem;
       text-align: center;
       font-size: 0.85rem;
       color: #888;
@@ -61,91 +102,88 @@
 <body>
 
 <header>
-  <h1>Whytegod</h1>
+  <h1><span>Whytegod</span> Protocol</h1>
   <p>
-    A calm, open financial protocol where people say <em>what they want</em> —
-    and the network figures out <em>how it happens</em>.
+    A decentralized system for turning human intent
+    into reliable execution —
+    without trust, hype, or permission.
   </p>
 
   <nav>
     <a href="intent.html">Intent</a>
     <a href="flow.html">Flow</a>
-    <a href="governance.html">Governance</a>
     <a href="security.html">Security</a>
-    <a href="trust.html">Trust</a>
+    <a href="governance.html">Governance</a>
+    <a href="reference.html">Reference</a>
     <a href="manifesto.html">Manifesto</a>
   </nav>
 </header>
 
 <section>
-  <h2>What is Whytegod?</h2>
-  <p>
-    Whytegod is not an app.
-    It’s not a wallet.
-    It’s not a trading platform.
-  </p>
-  <p>
-    Whytegod is a <strong>protocol</strong> — a shared set of rules that lets people
-    express financial intent in plain terms, without needing to understand
-    blockchains, contracts, or execution logic.
-  </p>
+
+  <div class="card">
+    <h2>What is Whytegod?</h2>
+    <p>
+      Whytegod is not an exchange.
+      Not a wallet.
+      Not a trading platform.
+    </p>
+    <p>
+      It is a protocol — a shared rule system —
+      designed to make complex financial and digital actions
+      simple, predictable, and human-friendly.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Why it exists</h2>
+    <p>
+      Most systems force people
+      to think like machines.
+    </p>
+    <p>
+      Whytegod does the opposite:
+      the system adapts to human intent.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>What makes it different</h2>
+    <p>
+      • No custody of user funds<br />
+      • No hidden operators<br />
+      • No forced token speculation<br />
+      • No permissions to participate
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Who it is for</h2>
+    <p>
+      Whytegod is for:
+    </p>
+    <p>
+      • everyday users who want clarity<br />
+      • developers who value simplicity<br />
+      • systems that must survive long-term
+    </p>
+  </div>
+
 </section>
 
-<section>
-  <h2>Why it exists</h2>
+<section class="cta">
   <p>
-    Most financial systems force people to think like machines.
-    Addresses. Gas fees. Slippage. Order types.
-  </p>
-  <p>
-    Humans don’t think that way.
-  </p>
-  <p>
-    Whytegod flips the model:
+    Whytegod is intentionally quiet.
     <br />
-    <strong>You say what you want. The system handles the rest.</strong>
-  </p>
-</section>
-
-<section>
-  <h2>Who it’s for</h2>
-  <p>
-    Whytegod is built for everyday people, builders, and institutions —
-    anyone who wants financial actions to feel natural, safe, and understandable.
-  </p>
-  <p>
-    You don’t need permission.
-    You don’t need custody.
-    You don’t need to trust anyone.
-  </p>
-</section>
-
-<section>
-  <h2>How it works (at a glance)</h2>
-  <p>
-    1. A user expresses an intent (what they want to happen).
-    <br />
-    2. The network evaluates valid ways to fulfill it.
-    <br />
-    3. Execution happens transparently and verifiably.
-  </p>
-  <p>
-    No centralized control. No hidden logic. No silent custody.
-  </p>
-</section>
-
-<section>
-  <h2>Open by design</h2>
-  <p>
-    Whytegod is built on the Open Financial Network (OFN).
-    Its rules are public.
-    Its logic is inspectable.
-    Its future is governed, not owned.
+    If something feels confusing,
+    the protocol has failed —
+    not you.
   </p>
 </section>
 
 <footer>
-  © Whytegod Protocol — Open, calm, and human-first.
+  Whytegod is an idea expressed as software.  
+  No promises. No shortcuts. Just rules.
 </footer>
 
 </body>
