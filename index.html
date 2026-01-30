@@ -20,9 +20,9 @@
     }
 
     .container {
-      max-width: 820px;
+      max-width: 860px;
       margin: auto;
-      padding: 40px 20px 80px;
+      padding: 40px 20px 90px;
     }
 
     .logo {
@@ -39,16 +39,17 @@
     h1 {
       text-align: center;
       margin-bottom: 10px;
+      letter-spacing: 1px;
     }
 
     .subtitle {
       text-align: center;
       opacity: 0.85;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     section {
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
 
     ul {
@@ -62,8 +63,8 @@
     .box {
       background: #141414;
       border-left: 3px solid #666;
-      padding: 20px;
-      margin-top: 15px;
+      padding: 22px;
+      margin-top: 18px;
     }
 
     .example {
@@ -74,8 +75,17 @@
       font-size: 0.95em;
     }
 
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background: #0f0f0f;
+      padding: 12px;
+      border: 1px solid #333;
+      margin-top: 12px;
+      white-space: pre-wrap;
+    }
+
     footer {
-      margin-top: 80px;
+      margin-top: 90px;
       text-align: center;
       font-size: 0.85em;
       opacity: 0.6;
@@ -97,12 +107,13 @@
     <section>
       <h2>What This Is</h2>
       <p>
-        Whytegod is a <strong>read-only protocol</strong> that explains what crypto systems
-        actually do — before you trust them, before you use them, before you lose money.
+        Whytegod is a <strong>read-only public protocol</strong> that explains what crypto systems
+        actually do — before trust is required, before value is transferred, before risk is taken.
       </p>
       <p>
-        No accounts. No wallets. No execution.  
-        Only rules, math, and consequences.
+        It does not execute.  
+        It does not custody.  
+        It does not persuade.
       </p>
     </section>
 
@@ -110,10 +121,10 @@
     <section>
       <h2>What Whytegod Does</h2>
       <ul>
-        <li>Translates crypto actions into human language</li>
-        <li>Separates math from assumptions</li>
+        <li>Translates crypto actions into plain human language</li>
+        <li>Separates mathematical certainty from human assumptions</li>
         <li>Reveals control, dependency, and failure points</li>
-        <li>Applies the same logic to every protocol</li>
+        <li>Applies the same logic to all systems equally</li>
       </ul>
     </section>
 
@@ -161,26 +172,69 @@
         </ul>
       </div>
 
+      <div class="example">
+        <strong>Plain Language Translation:</strong><br />
+        “You are trusting people and code you cannot control.
+        The 20% is conditional, not mathematical.”
+      </div>
+    </section>
+
+    <!-- INPUT GRAMMAR -->
+    <section>
+      <h2>Input Grammar v0.1</h2>
+      <p>
+        Whytegod accepts only inputs that describe a <strong>specific crypto action</strong>.
+        If an action cannot be described clearly, it cannot be analyzed truthfully.
+      </p>
+
       <div class="box">
-        <h3>Control & Risk Lens</h3>
+        <strong>Required Structure:</strong>
+        <div class="mono">
+ACTION + ASSET + PLATFORM + PROMISE (optional)
+        </div>
+      </div>
+
+      <div class="box">
+        <strong>Example:</strong>
+        <div class="mono">
+Stake ETH on Lido for 5% APY
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>Allowed Actions</h3>
         <ul>
-          <li>Upgrade control: Platform operators</li>
-          <li>Fund control: Smart contract with admin authority</li>
-          <li>Immutable system: No</li>
-          <li>Math-guaranteed yield: No</li>
+          <li>Buy</li>
+          <li>Sell</li>
+          <li>Stake</li>
+          <li>Lock</li>
+          <li>Bridge</li>
+          <li>Swap</li>
+          <li>Lend</li>
+          <li>Borrow</li>
+          <li>Mint</li>
+          <li>Provide Liquidity</li>
+          <li>Delegate</li>
         </ul>
       </div>
 
-      <div class="example">
-        <strong>Plain Language Translation:</strong><br />
-        “You are trusting people and code you cannot control.  
-        The 20% is conditional, not mathematical.”
+      <div class="box">
+        <h3>Rules</h3>
+        <ul>
+          <li>Assets must be named</li>
+          <li>Platforms must be identified</li>
+          <li>Promises are analyzed, never trusted</li>
+          <li>Predictions and opinions are rejected</li>
+        </ul>
       </div>
 
-      <div class="example">
-        <strong>Final Clarity:</strong><br />
-        “This is not passive income.  
-        It is risk accepted in exchange for a possible reward.”
+      <div class="box">
+        <h3>Invalid Inputs</h3>
+        <div class="mono">
+Will I make money?
+This is a good project
+Explain crypto
+        </div>
       </div>
     </section>
 
