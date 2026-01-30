@@ -1,267 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- =========================
+WHYTEGOD v0.1 STATIC SITE
+Copy each section into its own file as named
+========================= --><!-- ===== index.html ===== --><!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Whytegod Protocol</title>
-
-  <!-- FAVICON -->
-  <link rel="icon" type="image/png" href="favicon.png" />
-
+  <title>Whytegod</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #0b0b0b;
-      color: #eaeaea;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 860px;
-      margin: auto;
-      padding: 40px 20px 90px;
-    }
-
-    .logo {
-      display: block;
-      max-width: 160px;
-      margin: 0 auto 30px;
-    }
-
-    h1, h2, h3 {
-      color: #ffffff;
-      font-weight: 600;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
-    }
-
-    .subtitle {
-      text-align: center;
-      opacity: 0.85;
-      margin-bottom: 50px;
-    }
-
-    section {
-      margin-bottom: 60px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .box {
-      background: #141414;
-      border-left: 3px solid #666;
-      padding: 22px;
-      margin-top: 18px;
-    }
-
-    .example {
-      background: #111;
-      border: 1px solid #333;
-      padding: 20px;
-      margin-top: 20px;
-      font-size: 0.95em;
-    }
-
-    .mono {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      background: #0f0f0f;
-      padding: 12px;
-      border: 1px solid #333;
-      margin-top: 12px;
-      white-space: pre-wrap;
-    }
-
-    footer {
-      margin-top: 90px;
-      text-align: center;
-      font-size: 0.85em;
-      opacity: 0.6;
-    }
+    body { font-family: system-ui, sans-serif; max-width: 800px; margin: auto; padding: 24px; line-height: 1.6; }
+    h1, h2 { font-weight: 600; }
+    nav a { margin-right: 12px; text-decoration: none; color: #000; }
+    footer { margin-top: 48px; font-size: 14px; }
   </style>
 </head>
-
 <body>
-  <div class="container">
-
-    <!-- LOGO -->
-    <img src="logo.png" alt="Whytegod Logo" class="logo" />
-
-    <!-- TITLE -->
-    <h1>WHYTEGOD</h1>
-    <p class="subtitle">A Public, Read-Only Crypto Reference Protocol</p>
-
-    <!-- WHAT THIS IS -->
-    <section>
-      <h2>What This Is</h2>
-      <p>
-        Whytegod is a <strong>read-only public protocol</strong> that explains what crypto systems
-        actually do — before trust is required, before value is transferred, before risk is taken.
-      </p>
-      <p>
-        It does not execute.  
-        It does not custody.  
-        It does not persuade.
-      </p>
-    </section>
-
-    <!-- WHAT IT DOES -->
-    <section>
-      <h2>What Whytegod Does</h2>
-      <ul>
-        <li>Translates crypto actions into plain human language</li>
-        <li>Separates mathematical certainty from human assumptions</li>
-        <li>Reveals control, dependency, and failure points</li>
-        <li>Applies the same logic to all systems equally</li>
-      </ul>
-    </section>
-
-    <!-- FIRST OUTPUT EXAMPLE -->
-    <section>
-      <h2>First Verifiable Output Example</h2>
-
-      <div class="example">
-        <strong>User Input:</strong><br />
-        “I want to stake Token X on Platform Y for 20% APY.”
-      </div>
-
-      <div class="box">
-        <h3>What Will Happen</h3>
-        <ul>
-          <li>You send Token X to a smart contract controlled by Platform Y</li>
-          <li>Your tokens are locked under rules you cannot change</li>
-        </ul>
-      </div>
-
-      <div class="box">
-        <h3>What Must Be True</h3>
-        <ul>
-          <li>The platform must generate or redistribute funds</li>
-          <li>The contract must remain unchanged</li>
-          <li>The operators must continue acting honestly</li>
-        </ul>
-      </div>
-
-      <div class="box">
-        <h3>What Might Happen</h3>
-        <ul>
-          <li>Rewards may reduce or stop</li>
-          <li>Withdrawal conditions may change</li>
-          <li>Contracts may be upgraded or replaced</li>
-        </ul>
-      </div>
-
-      <div class="box">
-        <h3>What Cannot Happen</h3>
-        <ul>
-          <li>Guaranteed returns</li>
-          <li>Risk-free yield</li>
-          <li>Profit without human dependency</li>
-        </ul>
-      </div>
-
-      <div class="example">
-        <strong>Plain Language Translation:</strong><br />
-        “You are trusting people and code you cannot control.
-        The 20% is conditional, not mathematical.”
-      </div>
-    </section>
-
-    <!-- INPUT GRAMMAR -->
-    <section>
-      <h2>Input Grammar v0.1</h2>
-      <p>
-        Whytegod accepts only inputs that describe a <strong>specific crypto action</strong>.
-        If an action cannot be described clearly, it cannot be analyzed truthfully.
-      </p>
-
-      <div class="box">
-        <strong>Required Structure:</strong>
-        <div class="mono">
-ACTION + ASSET + PLATFORM + PROMISE (optional)
-        </div>
-      </div>
-
-      <div class="box">
-        <strong>Example:</strong>
-        <div class="mono">
-Stake ETH on Lido for 5% APY
-        </div>
-      </div>
-
-      <div class="box">
-        <h3>Allowed Actions</h3>
-        <ul>
-          <li>Buy</li>
-          <li>Sell</li>
-          <li>Stake</li>
-          <li>Lock</li>
-          <li>Bridge</li>
-          <li>Swap</li>
-          <li>Lend</li>
-          <li>Borrow</li>
-          <li>Mint</li>
-          <li>Provide Liquidity</li>
-          <li>Delegate</li>
-        </ul>
-      </div>
-
-      <div class="box">
-        <h3>Rules</h3>
-        <ul>
-          <li>Assets must be named</li>
-          <li>Platforms must be identified</li>
-          <li>Promises are analyzed, never trusted</li>
-          <li>Predictions and opinions are rejected</li>
-        </ul>
-      </div>
-
-      <div class="box">
-        <h3>Invalid Inputs</h3>
-        <div class="mono">
-Will I make money?
-This is a good project
-Explain crypto
-        </div>
-      </div>
-    </section>
-
-    <!-- WHAT IT DOES NOT DO -->
-    <section>
-      <h2>What Whytegod Does Not Do</h2>
-      <ul>
-        <li>No custody</li>
-        <li>No execution</li>
-        <li>No predictions</li>
-        <li>No promotions</li>
-        <li>No financial advice</li>
-      </ul>
-    </section>
-
-    <!-- NOTICE -->
-    <section class="box">
-      <strong>Notice:</strong><br />
-      Whytegod does not tell you what to do.  
-      It shows you what is true.
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      © Whytegod Protocol — Public · Neutral · Read-Only
-    </footer>
-
-  </div>
+  <h1>WHYTEGOD</h1>
+  <p><strong>Before you trust it, explain it.</strong></p>  <h2>What Whytegod Is</h2>
+  <p>
+    Whytegod is a neutral protocol that explains the structure and risk of crypto actions in plain language.
+  </p>
+  <p>
+    It does not predict outcomes. It does not recommend actions. It does not promise profit.
+  </p>
+  <p>
+    Whytegod translates crypto behavior into cause and effect so ordinary people can understand what they are consenting to.
+  </p>  <h2>What Whytegod Is Not</h2>
+  <ul>
+    <li>An exchange</li>
+    <li>A wallet</li>
+    <li>Financial advice</li>
+    <li>A trading platform</li>
+    <li>An investment product</li>
+  </ul>
+  <p>
+    Whytegod does not take custody of assets and does not execute transactions.
+  </p>  <h2>How Whytegod Is Used</h2>
+  <p>
+    Describe a crypto action in one sentence. Whytegod explains what that action depends on, who controls it, and what cannot be guaranteed.
+  </p>
+  <p>
+    If something cannot be explained clearly, it cannot be trusted.
+  </p>  <footer>
+    <nav>
+      <a href="explain.html">Explain</a>
+      <a href="grammar.html">Grammar</a>
+      <a href="risk.html">Risk</a>
+      <a href="protocol.html">Protocol</a>
+      <a href="token.html">Token Law</a>
+      <a href="about.html">About</a>
+    </nav>
+  </footer>
+</body>
+</html><!-- ===== explain.html ===== --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explain – Whytegod</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+</head>
+<body>
+  <h1>Explain a Crypto Action</h1>
+  <p>Describe what you are about to do.</p>
+  <pre>Stake USDT on Platform X for 15% APY</pre>  <h2>Example Output</h2>
+  <p><strong>Action Summary</strong><br>You are transferring USDT to a platform-controlled contract in exchange for promised yield.</p>
+  <p><strong>Control Analysis</strong><br>Platform X controls the contract logic and withdrawal conditions.</p>
+  <p><strong>Dependency Map</strong></p>
+  <ul>
+    <li>Platform solvency</li>
+    <li>Continued inflow of funds</li>
+    <li>Honest operator behavior</li>
+  </ul>
+  <p><strong>Risk Severity</strong><br>🔴 Critical — custodial control and promised returns</p>
+  <p><strong>What Cannot Be Guaranteed</strong></p>
+  <ul>
+    <li>That rewards will continue</li>
+    <li>That withdrawals remain available</li>
+    <li>That capital is recoverable</li>
+  </ul>
+  <p><strong>Plain-Language Verdict</strong><br>You are trusting people more than math. The yield is conditional, not enforced.</p>  <p><em>Whytegod explains structure. It does not advise, predict, or recommend.</em></p>
+</body>
+</html><!-- ===== grammar.html ===== --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grammar – Whytegod</title>
+</head>
+<body>
+  <h1>How to Describe Actions Clearly</h1>
+  <pre>ACTION + ASSET + PLATFORM + PROMISE</pre>  <h2>Allowed Actions</h2>
+  <p>Buy, Sell, Stake, Lock, Bridge, Mint, Swap, Lend, Borrow, Provide Liquidity, Delegate</p>  <h2>Valid Inputs</h2>
+  <pre>Bridge ETH from Ethereum to Arbitrum</pre>
+  <pre>Provide liquidity with ETH and USDC on Uniswap</pre>  <h2>Invalid Inputs</h2>
+  <pre>Will I make money?</pre>
+  <pre>This project looks good</pre>
+  <p>Whytegod explains actions, not opinions.</p>
+</body>
+</html><!-- ===== risk.html ===== --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Risk – Whytegod</title>
+</head>
+<body>
+  <h1>Risk Severity</h1>
+  <p>Risk is determined by how many things must go right for success to occur.</p>  <h2>🟢 Low Risk</h2>
+  <p>Outcome depends primarily on immutable code or math.</p>  <h2>🟡 Medium Risk</h2>
+  <p>Outcome depends on code and limited human behavior.</p>  <h2>🟠 High Risk</h2>
+  <p>Outcome depends on continued human behavior and incentives.</p>  <h2>🔴 Critical Risk</h2>
+  <p>Outcome depends on trust, discretion, or centralized control.</p>
+</body>
+</html><!-- ===== token.html ===== --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Token Law – Whytegod</title>
+</head>
+<body>
+  <h1>Token Neutrality</h1>
+  <p>Whytegod does not issue a financial token.</p>
+  <p>No token may represent profit, ownership, yield, or governance power.</p>
+  <p>If a token ever becomes valuable, the protocol has failed.</p>
+</body>
+</html><!-- ===== protocol.html ===== --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protocol – Whytegod</title>
+</head>
+<body>
+  <h1>Whytegod Protocol v0.1</h1>
+  <ul>
+    <li>Neutrality over incentives</li>
+    <li>Explanation over prediction</li>
+    <li>Structure over hype</li>
+    <li>Math over authority</li>
+  </ul>
+</body>
+</html><!-- ===== about.html ===== --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Whytegod</title>
+</head>
+<body>
+  <p>
+    Whytegod exists because most losses in crypto come from misunderstanding, not code.
+  </p>
+  <p>
+    The protocol was created to explain what is happening before trust is given.
+  </p>
 </body>
 </html>
