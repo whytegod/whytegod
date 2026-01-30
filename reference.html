@@ -2,197 +2,232 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Whytegod — Reference Implementation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reference — Whytegod Protocol</title>
 
-  <meta name="description" content="Minimal reference implementation for the Whytegod protocol." />
-  <link rel="icon" href="favicon.png" />
+  <meta name="description" content="Technical reference and design constraints of the Whytegod Protocol." />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #0b0b0b;
-      color: #eaeaea;
+      background-color: #0b0f14;
+      color: #e6e6e6;
       line-height: 1.7;
     }
 
+    header {
+      padding: 20px 24px;
+      border-bottom: 1px solid #1f2933;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 32px;
+    }
+
+    nav a {
+      margin-left: 18px;
+      text-decoration: none;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
     main {
-      max-width: 820px;
-      margin: auto;
-      padding: 48px 20px;
+      max-width: 900px;
+      margin: 100px auto;
+      padding: 0 24px;
     }
 
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
+      font-size: 44px;
+      font-weight: 600;
+      margin-bottom: 30px;
     }
 
     h2 {
-      margin-top: 3rem;
-      font-size: 1.3rem;
+      margin-top: 70px;
+      font-size: 26px;
+      font-weight: 500;
+      border-bottom: 1px solid #1f2933;
+      padding-bottom: 10px;
     }
 
     p {
-      max-width: 720px;
+      font-size: 18px;
+      color: #d1d5db;
+      margin-top: 22px;
     }
 
     ul {
-      padding-left: 1.2rem;
+      margin-top: 18px;
+      padding-left: 20px;
     }
 
     li {
-      margin-bottom: 0.4rem;
+      margin-bottom: 12px;
+      font-size: 17px;
+      color: #d1d5db;
     }
 
-    code, pre {
-      background: #151515;
-      padding: 10px;
-      border-radius: 6px;
-      font-size: 0.9em;
-      overflow-x: auto;
-    }
-
-    pre {
-      margin-top: 1rem;
-    }
-
-    a {
-      color: #9ad1ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    code {
+      background-color: #111827;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-size: 15px;
+      color: #e5e7eb;
     }
 
     footer {
-      margin-top: 4rem;
-      font-size: 0.85rem;
-      color: #888;
+      margin-top: 160px;
+      padding: 24px;
+      border-top: 1px solid #1f2933;
+      font-size: 14px;
+      color: #9ca3af;
+      text-align: center;
+    }
+
+    footer a {
+      color: #9ca3af;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      color: #ffffff;
     }
   </style>
 </head>
 
 <body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="logo.png" alt="Whytegod Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="intent.html">Intent</a>
+      <a href="flow.html">Flow</a>
+      <a href="security.html">Security</a>
+      <a href="governance.html">Governance</a>
+      <a href="manifesto.html">Manifesto</a>
+      <a href="reference.html">Reference</a>
+    </nav>
+  </header>
+
+  <!-- CONTENT -->
   <main>
 
-    <h1>Reference Implementation</h1>
+    <h1>Reference</h1>
 
     <p>
-      This document provides a minimal, non-production reference implementation
-      of the Whytegod protocol.
+      This document defines the fixed assumptions,
+      non-goals,
+      and technical boundaries of the Whytegod Protocol.
     </p>
 
-    <p>
-      The purpose of this implementation is to illustrate protocol concepts,
-      data flow, and invariants. It is not intended for deployment.
-    </p>
+    <h2>Protocol Scope</h2>
 
-    <h2>Scope</h2>
+    <ul>
+      <li>Whytegod is a protocol, not a platform.</li>
+      <li>Whytegod does not custody funds.</li>
+      <li>Whytegod does not intermediate trust.</li>
+      <li>Whytegod does not optimize for speculation.</li>
+    </ul>
+
+    <h2>Design Constraints</h2>
+
+    <ul>
+      <li>No centralized control paths.</li>
+      <li>No admin override functions.</li>
+      <li>No mutable core logic after deployment.</li>
+      <li>No dependency on identity or reputation.</li>
+    </ul>
+
+    <h2>Token Relationship</h2>
 
     <p>
-      The reference implementation demonstrates:
+      Any token associated with Whytegod exists to
+      enforce protocol rules,
+      not to represent ownership or profit rights.
     </p>
 
     <ul>
-      <li>intent creation</li>
-      <li>intent validation</li>
-      <li>execution planning</li>
-      <li>explicit failure handling</li>
+      <li>No dividend logic.</li>
+      <li>No promised yield.</li>
+      <li>No protocol-level price targets.</li>
     </ul>
 
+    <h2>Execution Model</h2>
+
     <p>
-      It intentionally omits:
+      The protocol operates on deterministic execution:
     </p>
 
     <ul>
-      <li>network transport</li>
-      <li>key management</li>
-      <li>regulatory enforcement</li>
-      <li>production security controls</li>
+      <li>Valid input → deterministic output.</li>
+      <li>No discretionary judgment.</li>
+      <li>No probabilistic execution paths.</li>
     </ul>
 
-    <h2>Conceptual Flow</h2>
-
-    <p>
-      At a high level, the reference flow follows:
-    </p>
-
-    <pre>
-Intent → Validation → Policy Check → Execution Plan → Result
-    </pre>
-
-    <h2>Example Intent (Pseudocode)</h2>
-
-    <pre>
-intent = {
-  "goal": "transfer value",
-  "constraints": {
-    "max_slippage": 1.0,
-    "timeout": 600
-  },
-  "failure_policy": "abort"
-}
-    </pre>
-
-    <h2>Validation Step</h2>
-
-    <p>
-      Validation ensures the intent conforms to schema and protocol rules.
-      Invalid intents are rejected before planning.
-    </p>
-
-    <pre>
-if not validate(intent):
-    reject("invalid intent")
-    </pre>
-
-    <h2>Execution Planning</h2>
-
-    <p>
-      A valid intent is transformed into one or more execution plans.
-      The selection process is implementation-defined.
-    </p>
-
-    <pre>
-plans = generate_execution_plans(intent)
-selected_plan = select_plan(plans)
-    </pre>
-
-    <h2>Execution and Result</h2>
-
-    <p>
-      The selected plan is executed. Outcomes may be success or failure,
-      both of which are explicit and observable.
-    </p>
-
-    <pre>
-result = execute(selected_plan)
-
-if result.failed:
-    report_failure(result)
-else:
-    finalize(result)
-    </pre>
-
-    <h2>Protocol Guarantees</h2>
+    <h2>Privacy Assumptions</h2>
 
     <ul>
-      <li>Intent meaning is preserved end-to-end</li>
-      <li>Execution steps are replaceable</li>
-      <li>Failures are explicit, not hidden</li>
-      <li>No implicit custody assumptions</li>
+      <li>No mandatory metadata collection.</li>
+      <li>No user profiling.</li>
+      <li>No analytics embedded at protocol level.</li>
     </ul>
 
-    <footer>
-      <p>
-        This document is part of the Whytegod protocol specification.<br />
-        The canonical source remains <code>REFERENCE_IMPLEMENTATION.md</code>.
-      </p>
-    </footer>
+    <h2>Governance Boundary</h2>
+
+    <p>
+      Governance exists only to remove itself.
+    </p>
+
+    <ul>
+      <li>Temporary coordination.</li>
+      <li>No permanent councils.</li>
+      <li>No personality-driven authority.</li>
+    </ul>
+
+    <h2>Out of Scope</h2>
+
+    <ul>
+      <li>Marketing incentives.</li>
+      <li>Influencer alignment.</li>
+      <li>Institutional onboarding.</li>
+      <li>Regulatory optimization.</li>
+    </ul>
+
+    <h2>Final Note</h2>
+
+    <p>
+      If a feature requires trust,
+      it does not belong here.
+    </p>
+
+    <p>
+      If a system needs explanation to justify power,
+      it is excluded by design.
+    </p>
 
   </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© Whytegod Protocol</span> |
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="trust.html">Trust</a>
+  </footer>
+
 </body>
 </html>
