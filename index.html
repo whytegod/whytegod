@@ -38,23 +38,29 @@
       color: #d4d4d4;
     }
 
+    /* NAVIGATION */
     nav {
       margin-top: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem;
     }
 
     nav a {
-      display: inline-block;
-      margin: 0.4rem;
-      padding: 0.65rem 1.2rem;
-      border-radius: 8px;
+      padding: 0.7rem 1.3rem;
+      border-radius: 999px;
       text-decoration: none;
-      background: #e6e6e6;
+      background: rgba(230, 230, 230, 0.95);
       color: #0b0f14;
       font-weight: 500;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
     }
 
     nav a:hover {
       background: #9fe0ff;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     }
 
     section {
@@ -79,17 +85,6 @@
       color: #d6d6d6;
     }
 
-    .cta {
-      text-align: center;
-      padding: 3.5rem 1.5rem;
-    }
-
-    .cta p {
-      font-size: 1.1rem;
-      max-width: 720px;
-      margin: auto;
-    }
-
     footer {
       padding: 2.5rem 1.5rem;
       text-align: center;
@@ -109,41 +104,36 @@
     without trust, hype, or permission.
   </p>
 
+  <!-- NAVIGATION -->
   <nav>
     <a href="intent.html">Intent</a>
-    <a href="flow.html">Flow</a>
+    <a href="flow.html">How It Works</a>
     <a href="security.html">Security</a>
-    <a href="governance.html">Governance</a>
+    <a href="governance.html">Rules</a>
     <a href="reference.html">Reference</a>
-    <a href="manifesto.html">Manifesto</a>
+    <a href="manifesto.html">Why We Exist</a>
   </nav>
+
+  <p style="opacity:0.7; font-size:0.9rem; margin-top:1.2rem;">
+    Start anywhere. There’s no wrong door.
+  </p>
 </header>
 
 <section>
-
   <div class="card">
     <h2>What is Whytegod?</h2>
     <p>
-      Whytegod is not an exchange.
-      Not a wallet.
-      Not a trading platform.
-    </p>
-    <p>
-      It is a protocol — a shared rule system —
-      designed to make complex financial and digital actions
-      simple, predictable, and human-friendly.
+      Whytegod is not an exchange, not a wallet, and not a trading platform.
+      It is a protocol designed to help humans express intent clearly
+      and let systems execute it safely.
     </p>
   </div>
 
   <div class="card">
     <h2>Why it exists</h2>
     <p>
-      Most systems force people
-      to think like machines.
-    </p>
-    <p>
-      Whytegod does the opposite:
-      the system adapts to human intent.
+      Most systems force people to think like machines.
+      Whytegod flips that model — the system adapts to human intent.
     </p>
   </div>
 
@@ -152,33 +142,10 @@
     <p>
       • No custody of user funds<br />
       • No hidden operators<br />
-      • No forced token speculation<br />
-      • No permissions to participate
+      • No forced speculation<br />
+      • No permission required
     </p>
   </div>
-
-  <div class="card">
-    <h2>Who it is for</h2>
-    <p>
-      Whytegod is for:
-    </p>
-    <p>
-      • everyday users who want clarity<br />
-      • developers who value simplicity<br />
-      • systems that must survive long-term
-    </p>
-  </div>
-
-</section>
-
-<section class="cta">
-  <p>
-    Whytegod is intentionally quiet.
-    <br />
-    If something feels confusing,
-    the protocol has failed —
-    not you.
-  </p>
 </section>
 
 <footer>
