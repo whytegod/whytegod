@@ -3,258 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flow — Whytegod Protocol</title>
-
-  <meta name="description" content="How intent becomes execution in the Whytegod Protocol." />
-
-  <link rel="icon" type="image/png" href="favicon.png" />
-
+  <title>Whytegod — Flow</title>
+  <link rel="icon" href="favicon.png" />
   <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background-color: #0b0f14;
-      color: #e6e6e6;
-      line-height: 1.7;
-    }
-
-    header {
-      padding: 20px 24px;
-      border-bottom: 1px solid #1f2933;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header img {
-      height: 32px;
-    }
-
-    nav a {
-      margin-left: 18px;
-      text-decoration: none;
-      color: #9ca3af;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #ffffff;
-    }
-
-    main {
-      max-width: 880px;
-      margin: 90px auto;
-      padding: 0 24px;
-    }
-
-    h1 {
-      font-size: 42px;
-      font-weight: 600;
-      margin-bottom: 24px;
-    }
-
-    h2 {
-      margin-top: 64px;
-      font-size: 26px;
-      border-bottom: 1px solid #1f2933;
-      padding-bottom: 10px;
-    }
-
-    p {
-      font-size: 18px;
-      color: #d1d5db;
-      margin-top: 18px;
-    }
-
-    .flow-step {
-      margin-top: 32px;
-      padding: 20px;
-      background: #0f172a;
-      border-left: 4px solid #22c55e;
-    }
-
-    .flow-step strong {
-      color: #bbf7d0;
-    }
-
-    footer {
-      margin-top: 140px;
-      padding: 24px;
-      border-top: 1px solid #1f2933;
-      font-size: 14px;
-      color: #9ca3af;
-      text-align: center;
-    }
-
-    footer a {
-      color: #9ca3af;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    footer a:hover {
-      color: #ffffff;
-    }
+    body { background:#0b0b0b; color:#eaeaea; font-family:system-ui; margin:0; }
+    section { max-width:900px; margin:auto; padding:2rem; }
+    a { color:#9ad1ff; text-decoration:none; }
   </style>
 </head>
-
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img src="logo.png" alt="Whytegod Logo" />
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="intent.html">Intent</a>
-      <a href="flow.html">Flow</a>
-      <a href="security.html">Security</a>
-      <a href="governance.html">Governance</a>
-      <a href="manifesto.html">Manifesto</a>
-      <a href="reference.html">Reference</a>
-    </nav>
-  </header>
+<section>
+  <a href="index.html">← Index</a>
+  <h1>Execution Flow</h1>
 
-  <!-- CONTENT -->
-  <main>
+  <ol>
+    <li>User submits intent</li>
+    <li>Intent is broadcast to the network</li>
+    <li>Executors evaluate feasibility</li>
+    <li>Execution proposals compete</li>
+    <li>Best-valid execution is selected</li>
+    <li>Outcome is verified</li>
+  </ol>
 
-    <h1>Flow</h1>
+  <p>
+    The user does not select executors.
+    The protocol enforces outcome validity.
+  </p>
 
-    <p>
-      Flow describes how an abstract human intention
-      becomes a finalized, verifiable execution
-      without requiring the user to understand
-      infrastructure, routing, or counterparties.
-    </p>
+  <h2>Key Property</h2>
 
-    <h2>High-Level Overview</h2>
+  <p>
+    Execution is optional.<br/>
+    Intent is permanent.
+  </p>
 
-    <p>
-      Whytegod separates financial action into four distinct phases:
-    </p>
-
-    <div class="flow-step">
-      <strong>1. Intent Declaration</strong><br/>
-      The user states what outcome they want — not how to achieve it.
-    </div>
-
-    <div class="flow-step">
-      <strong>2. Validation</strong><br/>
-      The intent is checked for correctness, feasibility, and constraints.
-    </div>
-
-    <div class="flow-step">
-      <strong>3. Resolution</strong><br/>
-      The system determines possible execution paths.
-    </div>
-
-    <div class="flow-step">
-      <strong>4. Execution</strong><br/>
-      One valid path is executed and settled.
-    </div>
-
-    <h2>1. Intent Declaration</h2>
-
-    <p>
-      An intent is a structured statement of desire.
-    </p>
-
-    <p>
-      It may include:
-    </p>
-
-    <p>
-      • desired outcome<br/>
-      • acceptable constraints<br/>
-      • time boundaries<br/>
-      • trust assumptions
-    </p>
-
-    <p>
-      The user does not select routes, protocols,
-      liquidity sources, or counterparties.
-    </p>
-
-    <h2>2. Validation</h2>
-
-    <p>
-      Before any execution is attempted,
-      the intent is validated.
-    </p>
-
-    <p>
-      Validation ensures:
-    </p>
-
-    <p>
-      • the intent is internally consistent<br/>
-      • constraints do not conflict<br/>
-      • required conditions can be met
-    </p>
-
-    <p>
-      Invalid intents fail early and safely.
-    </p>
-
-    <h2>3. Resolution</h2>
-
-    <p>
-      Resolution is where intelligence replaces manual decision-making.
-    </p>
-
-    <p>
-      The system evaluates multiple possible execution paths,
-      comparing them against the declared intent.
-    </p>
-
-    <p>
-      This phase is adversarial by design.
-      Paths are assumed to be unreliable until proven otherwise.
-    </p>
-
-    <h2>4. Execution</h2>
-
-    <p>
-      Execution occurs only after a valid path is selected.
-    </p>
-
-    <p>
-      Execution engines are replaceable,
-      auditable, and non-authoritative.
-    </p>
-
-    <p>
-      Failure does not compromise the system.
-      It simply returns control to the resolution phase.
-    </p>
-
-    <h2>Finality</h2>
-
-    <p>
-      Once execution succeeds,
-      the outcome is verifiable.
-    </p>
-
-    <p>
-      No hidden steps.
-      No discretionary overrides.
-      No silent failures.
-    </p>
-
-    <p>
-      What was declared
-      is what occurred —
-      or nothing occurs at all.
-    </p>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <span>© Whytegod Protocol</span> |
-    <a href="privacy.html">Privacy</a>
-    <a href="terms.html">Terms</a>
-    <a href="trust.html">Trust</a>
-  </footer>
+</section>
 
 </body>
 </html>
