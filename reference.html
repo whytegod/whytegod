@@ -2,226 +2,213 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Reference — Whytegod Protocol</title>
-
-  <meta name="description" content="Technical reference, definitions, and external anchors for the Whytegod Protocol." />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plain-language reference for terms and concepts used in the Whytegod Protocol." />
+  <link rel="icon" href="favicon.png" />
   <style>
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background-color: #0b0f14;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0b0f14;
       color: #e6e6e6;
-      line-height: 1.7;
+      line-height: 1.75;
     }
-
     header {
-      padding: 24px;
-      border-bottom: 1px solid #1f2933;
-    }
-
-    header a {
-      color: #9ca3af;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 80px auto 0;
-      padding: 0 24px;
-    }
-
-    h1 {
-      font-size: 42px;
-      font-weight: 600;
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      margin-top: 80px;
-      font-size: 26px;
-      font-weight: 500;
-      border-bottom: 1px solid #1f2933;
-      padding-bottom: 10px;
-    }
-
-    h3 {
-      margin-top: 40px;
-      font-size: 20px;
-      font-weight: 500;
-    }
-
-    p {
-      font-size: 18px;
-      color: #d1d5db;
-      margin-top: 16px;
-      max-width: 780px;
-    }
-
-    ul {
-      margin-top: 20px;
-      padding-left: 20px;
-    }
-
-    li {
-      margin-top: 12px;
-      font-size: 17px;
-      color: #d1d5db;
-    }
-
-    code {
-      background: #111827;
-      padding: 3px 6px;
-      border-radius: 4px;
-      font-size: 15px;
-      color: #e5e7eb;
-    }
-
-    .quiet {
-      color: #9ca3af;
-      font-size: 15px;
-    }
-
-    footer {
-      margin-top: 160px;
-      padding: 30px 24px;
-      border-top: 1px solid #1f2933;
-      font-size: 14px;
-      color: #9ca3af;
+      padding: 3.2rem 1.5rem;
       text-align: center;
     }
-
-    footer a {
-      color: #9ca3af;
-      text-decoration: none;
-      margin: 0 12px;
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.6rem;
     }
-
-    footer a:hover {
-      color: #ffffff;
+    p {
+      max-width: 880px;
+      margin: 1rem auto;
+      font-size: 1.05rem;
+      color: #d4d4d4;
+    }
+    nav {
+      margin-top: 2rem;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0.35rem;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #0b0f14;
+      background: #e6e6e6;
+      font-weight: 500;
+    }
+    nav a:hover {
+      background: #c7e0ff;
+    }
+    section {
+      padding: 2.4rem 1.5rem;
+      max-width: 920px;
+      margin: auto;
+    }
+    .term {
+      background: #111827;
+      padding: 1.6rem;
+      border-radius: 10px;
+      margin: 1.8rem 0;
+    }
+    .term h2 {
+      margin-top: 0;
+      color: #9fe0ff;
+    }
+    footer {
+      padding: 2.2rem 1.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <a href="index.html">← Back to Home</a>
-  </header>
+<header>
+  <h1>Reference</h1>
+  <p>
+    Clear meanings.  
+    No hidden language.
+  </p>
 
-  <main>
-
-    <h1>Reference</h1>
-
-    <p class="quiet">
-      This page exists for clarity, not persuasion.
-    </p>
-
-    <h2>Core Definitions</h2>
-
-    <h3>Protocol</h3>
-    <p>
-      A deterministic set of rules that governs behavior without requiring trust,
-      discretion, or centralized control.
-    </p>
-
-    <h3>Intent</h3>
-    <p>
-      A user-expressed objective that describes *what* should happen,
-      without specifying *how* it is executed.
-    </p>
-
-    <h3>Non-Custodial</h3>
-    <p>
-      A system that does not hold user assets, keys, or persistent state.
-    </p>
-
-    <h3>Deterministic</h3>
-    <p>
-      Given the same input, the protocol always produces the same output.
-    </p>
-
-    <h3>Fork</h3>
-    <p>
-      An independent continuation of the protocol when consensus cannot be reached.
-    </p>
-
-    <h2>Design Principles</h2>
-
-    <ul>
-      <li>Minimal surface area</li>
-      <li>No hidden state</li>
-      <li>No privileged roles</li>
-      <li>Explicit failure over silent behavior</li>
-      <li>Exit over control</li>
-    </ul>
-
-    <h2>What Whytegod Is Not</h2>
-
-    <ul>
-      <li>Not an exchange</li>
-      <li>Not a trading platform</li>
-      <li>Not a custody service</li>
-      <li>Not a financial intermediary</li>
-      <li>Not an investment product</li>
-    </ul>
-
-    <h2>Related Systems</h2>
-
-    <p>
-      The Whytegod Protocol is philosophically aligned with:
-    </p>
-
-    <ul>
-      <li>Bitcoin — rule-based monetary systems</li>
-      <li>Monero — privacy as default</li>
-      <li>Tor — minimization of trust</li>
-      <li>Unix philosophy — simple tools, clear behavior</li>
-    </ul>
-
-    <h2>Implementation Notes</h2>
-
-    <p>
-      Reference implementations may evolve.
-    </p>
-
-    <p>
-      The protocol specification takes precedence over any particular software.
-    </p>
-
-    <h2>External Anchors</h2>
-
-    <ul>
-      <li>Source code repositories</li>
-      <li>Protocol specifications</li>
-      <li>Cryptographic primitives</li>
-      <li>Academic references</li>
-    </ul>
-
-    <p class="quiet">
-      Links are intentionally sparse.
-      Authority does not come from citations.
-    </p>
-
-    <h2>Conclusion</h2>
-
-    <p>
-      This page exists so nothing needs to be explained twice.
-    </p>
-
-    <p>
-      Ambiguity is a liability.
-    </p>
-
-  </main>
-
-  <footer>
-    <a href="governance.html">Governance</a>
-    <a href="token.html">Token</a>
+  <nav>
     <a href="index.html">Home</a>
-  </footer>
+    <a href="intent.html">Intent</a>
+    <a href="flow.html">Flow</a>
+    <a href="governance.html">Governance</a>
+  </nav>
+</header>
+
+<section>
+
+  <div class="term">
+    <h2>Protocol</h2>
+    <p>
+      A protocol is a shared set of rules
+      that anyone can follow
+      without asking permission.
+    </p>
+    <p>
+      Whytegod is a protocol —
+      not a company, not a broker, not a bank.
+    </p>
+  </div>
+
+  <div class="term">
+    <h2>Intent</h2>
+    <p>
+      An intent is a statement of desired outcome,
+      expressed in human language.
+    </p>
+    <p>
+      It describes what the user wants —
+      not how the system should do it.
+    </p>
+  </div>
+
+  <div class="term">
+    <h2>Execution</h2>
+    <p>
+      Execution is the process of fulfilling an intent.
+    </p>
+    <p>
+      In Whytegod, execution is handled by the system,
+      not manually by the user.
+    </p>
+  </div>
+
+  <div class="term">
+    <h2>Value</h2>
+    <p>
+      Value refers to any unit of worth
+      recognized by the protocol.
+    </p>
+    <p>
+      It is not limited to a single coin or asset.
+    </p>
+  </div>
+
+  <div class="term">
+    <h2>Decentralization</h2>
+    <p>
+      Decentralization means
+      no single party can control outcomes.
+    </p>
+    <p>
+      Users retain the right to exit,
+      fork, or verify independently.
+    </p>
+  </div>
+
+  <div class="term">
+    <h2>Security</h2>
+    <p>
+      Security is the absence of surprise.
+    </p>
+    <p>
+      A secure system behaves predictably,
+      even under stress.
+    </p>
+  </div>
+
+  <div class="term">
+    <h2>Governance</h2>
+    <p>
+      Governance defines
+      how changes are proposed,
+      reviewed, and accepted.
+    </p>
+    <p>
+      In Whytegod,
+      governance is intentionally limited.
+    </p>
+  </div>
+
+  <div class="term">
+    <h2>User</h2>
+    <p>
+      A user is any individual
+      interacting with the protocol.
+    </p>
+    <p>
+      No identity, status, or permission is required.
+    </p>
+  </div>
+
+  <div class="term">
+    <h2>Fork</h2>
+    <p>
+      A fork is the right to copy the system
+      and continue independently.
+    </p>
+    <p>
+      This is the final safeguard
+      against abuse.
+    </p>
+  </div>
+
+  <div class="term">
+    <h2>Whytegod</h2>
+    <p>
+      Whytegod is an idea expressed as software.
+    </p>
+    <p>
+      It exists to reduce complexity
+      and restore human control.
+    </p>
+  </div>
+
+</section>
+
+<footer>
+  If a term is unclear, the system is wrong — not the user.
+</footer>
 
 </body>
 </html>
