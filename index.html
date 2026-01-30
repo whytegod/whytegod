@@ -48,7 +48,7 @@
     }
 
     section {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     ul {
@@ -59,10 +59,18 @@
       margin-bottom: 8px;
     }
 
-    .notice {
+    .box {
+      background: #141414;
       border-left: 3px solid #666;
-      padding-left: 15px;
-      opacity: 0.85;
+      padding: 20px;
+      margin-top: 15px;
+    }
+
+    .example {
+      background: #111;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-top: 20px;
       font-size: 0.95em;
     }
 
@@ -83,7 +91,7 @@
 
     <!-- TITLE -->
     <h1>WHYTEGOD</h1>
-    <p class="subtitle">A Public Crypto Reference Protocol</p>
+    <p class="subtitle">A Public, Read-Only Crypto Reference Protocol</p>
 
     <!-- WHAT THIS IS -->
     <section>
@@ -98,98 +106,106 @@
       </p>
     </section>
 
-    <!-- WHO IT IS FOR -->
+    <!-- WHAT IT DOES -->
     <section>
-      <h2>Who This Is For</h2>
+      <h2>What Whytegod Does</h2>
       <ul>
-        <li>Ordinary people who don’t want to guess</li>
-        <li>Developers who want neutral verification</li>
-        <li>Users tired of hidden risks</li>
-        <li>Anyone who values clarity over persuasion</li>
+        <li>Translates crypto actions into human language</li>
+        <li>Separates math from assumptions</li>
+        <li>Reveals control, dependency, and failure points</li>
+        <li>Applies the same logic to every protocol</li>
       </ul>
     </section>
 
-    <!-- WHAT IT DOES -->
+    <!-- FIRST OUTPUT EXAMPLE -->
     <section>
-      <h2>What Whytegod Does (v1)</h2>
+      <h2>First Verifiable Output Example</h2>
 
-      <h3>1. Action Translator</h3>
-      <p>
-        Explains what a crypto action will do, what must happen,
-        what might happen, and what cannot happen — in plain language.
-      </p>
+      <div class="example">
+        <strong>User Input:</strong><br />
+        “I want to stake Token X on Platform Y for 20% APY.”
+      </div>
 
-      <h3>2. Claim Verifier</h3>
-      <p>
-        Separates mathematical truth from assumptions, human control,
-        and undefined promises.
-      </p>
+      <div class="box">
+        <h3>What Will Happen</h3>
+        <ul>
+          <li>You send Token X to a smart contract controlled by Platform Y</li>
+          <li>Your tokens are locked under rules you cannot change</li>
+        </ul>
+      </div>
 
-      <h3>3. Protocol Risk Lens</h3>
-      <p>
-        Shows control concentration, upgrade authority,
-        immutability, and dependency risks — without opinions.
-      </p>
+      <div class="box">
+        <h3>What Must Be True</h3>
+        <ul>
+          <li>The platform must generate or redistribute funds</li>
+          <li>The contract must remain unchanged</li>
+          <li>The operators must continue acting honestly</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>What Might Happen</h3>
+        <ul>
+          <li>Rewards may reduce or stop</li>
+          <li>Withdrawal conditions may change</li>
+          <li>Contracts may be upgraded or replaced</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>What Cannot Happen</h3>
+        <ul>
+          <li>Guaranteed returns</li>
+          <li>Risk-free yield</li>
+          <li>Profit without human dependency</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Control & Risk Lens</h3>
+        <ul>
+          <li>Upgrade control: Platform operators</li>
+          <li>Fund control: Smart contract with admin authority</li>
+          <li>Immutable system: No</li>
+          <li>Math-guaranteed yield: No</li>
+        </ul>
+      </div>
+
+      <div class="example">
+        <strong>Plain Language Translation:</strong><br />
+        “You are trusting people and code you cannot control.  
+        The 20% is conditional, not mathematical.”
+      </div>
+
+      <div class="example">
+        <strong>Final Clarity:</strong><br />
+        “This is not passive income.  
+        It is risk accepted in exchange for a possible reward.”
+      </div>
     </section>
 
     <!-- WHAT IT DOES NOT DO -->
     <section>
       <h2>What Whytegod Does Not Do</h2>
       <ul>
-        <li>No custody of funds</li>
-        <li>No transactions</li>
-        <li>No investment advice</li>
+        <li>No custody</li>
+        <li>No execution</li>
+        <li>No predictions</li>
         <li>No promotions</li>
-        <li>No payments</li>
-      </ul>
-      <p>
-        Whytegod cannot benefit from your decisions.
-      </p>
-    </section>
-
-    <!-- WHY IT EXISTS -->
-    <section>
-      <h2>Why This Exists</h2>
-      <p>
-        Crypto became complex faster than humans could understand it.
-        Interfaces became simpler — rules became hidden.
-      </p>
-      <p>
-        Whytegod exposes rules again.
-      </p>
-    </section>
-
-    <!-- GOVERNANCE -->
-    <section>
-      <h2>Governance</h2>
-      <p>
-        Whytegod has no owner.
-        Truth cannot be voted on.
-        Math cannot be marketed.
-      </p>
-    </section>
-
-    <!-- STATUS -->
-    <section>
-      <h2>Status</h2>
-      <ul>
-        <li>Phase 0 — Declaration</li>
-        <li>Phase 1 — Reference Engine</li>
-        <li>Phase 2 — Public Verification Tools</li>
-        <li>Phase 3 — Optional Utility Layer (only if required)</li>
+        <li>No financial advice</li>
       </ul>
     </section>
 
     <!-- NOTICE -->
-    <section class="notice">
+    <section class="box">
       <strong>Notice:</strong><br />
-      This protocol does not provide financial advice.  
-      It provides clarity.
+      Whytegod does not tell you what to do.  
+      It shows you what is true.
     </section>
 
     <!-- FOOTER -->
     <footer>
-      © Whytegod Protocol — Public, Neutral, Read-Only
+      © Whytegod Protocol — Public · Neutral · Read-Only
     </footer>
 
   </div>
