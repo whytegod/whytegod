@@ -1,96 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>The Whytegod Manifesto</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whytegod</title>
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b0f16;
-      color: #eaeaea;
+      padding: 0;
+      background: #0d0d0d;
+      color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       text-align: center;
     }
 
-    h1 { font-size: 2.5rem; }
-    h2 { color: #9ad7ff; }
-
-    .nav {
-      margin: 30px 0;
-    }
-
-    .nav a {
-      text-decoration: none;
-      background: #eaeaea;
-      color: #000;
-      padding: 12px 18px;
-      margin: 8px;
-      border-radius: 10px;
-      display: inline-block;
-      font-weight: bold;
-    }
-
-    .nav a.active {
-      background: #b9dcff;
-    }
-
-    section {
+    .container {
       max-width: 700px;
-      margin: 60px auto;
-      padding: 40px;
-      background: linear-gradient(180deg, #0f172a, #0b0f16);
-      border-radius: 20px;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #00ffcc;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: #dddddd;
+    }
+
+    .closing {
+      margin-top: 40px;
+      font-size: 0.95rem;
+      opacity: 0.7;
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
 
-  <!-- HOME -->
-  <section id="home">
-    <h1>The Whytegod Manifesto</h1>
-    <p>A declaration of intent — not to dominate systems, but to make them humane.</p>
+    <!-- Optional logo (only if you have it) -->
+    <!-- <img src="whytegod-logo.png" alt="Whytegod Logo" width="120" /> -->
 
-    <div class="nav">
-      <a href="#home" class="active">Home</a>
-      <a href="#intent">Intent</a>
-      <a href="#flow">Flow</a>
-      <a href="#security">Security</a>
-      <a href="#governance">Governance</a>
+    <h1>Whytegod</h1>
+    <div class="tagline">
+      A decentralized protocol for human intent
     </div>
-  </section>
 
-  <!-- INTENT -->
-  <section id="intent">
-    <h2>We believe intent comes before execution</h2>
-    <p>Humans think in goals, not instructions.</p>
-    <p>Forcing people to act like machines creates stress, mistakes, and loss.</p>
-    <p><strong>Whytegod separates what you want from how it happens.</strong></p>
-  </section>
+    <p>
+      Whytegod is not a marketplace.  
+      It is not a bank.  
+      It is not a buy-and-sell platform.
+    </p>
 
-  <!-- FLOW -->
-  <section id="flow">
-    <h2>We believe systems should serve humans</h2>
-    <p>Most modern systems are built for speed, profit, and control.</p>
-    <p>Humans are expected to adapt — even when the system is hostile.</p>
-    <p><strong>Whytegod rejects this.</strong></p>
-  </section>
+    <p>
+      Whytegod is a coordination layer — where intent, logic, and trust
+      move without permission, intermediaries, or centralized control.
+    </p>
 
-  <!-- SECURITY -->
-  <section id="security">
-    <h2>We believe clarity is a form of security</h2>
-    <p>Complexity hides risk.</p>
-    <p>If a user cannot understand a system, the system already has too much power.</p>
-    <p><strong>Whytegod favors explainable behavior over clever abstractions.</strong></p>
-  </section>
+    <p>
+      Built for the everyday person.  
+      Designed to stay decentralized.  
+      Engineered to evolve.
+    </p>
 
-  <!-- GOVERNANCE -->
-  <section id="governance">
-    <h2>We believe trust must be earned, not assumed</h2>
-    <p>Trust is not a promise.</p>
-    <p>Trust is the result of consistent, observable behavior over time.</p>
-  </section>
+    <div class="closing">
+      This is not a product.  
+      This is a beginning.
+    </div>
 
+  </div>
 </body>
 </html>
