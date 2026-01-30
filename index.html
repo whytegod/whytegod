@@ -5,33 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Whytegod Protocol</title>
 
-  <!-- Basic SEO -->
-  <meta name="description" content="Whytegod is an AI-first, peer-to-peer financial execution protocol. A standardized, intent-based execution layer for open financial systems." />
-  <meta name="author" content="Whytegod Protocol" />
+  <meta name="description" content="Whytegod Protocol — a neutral, decentralized system designed to reduce complexity for the ordinary man." />
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
 
-  <!-- Minimal styling (no framework) -->
   <style>
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background-color: #0b0f14;
       color: #e6e6e6;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
-      padding: 20px 24px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #0b0f14;
       border-bottom: 1px solid #1f2933;
+      padding: 18px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      z-index: 100;
     }
 
     header img {
-      height: 32px;
+      height: 34px;
     }
 
     nav a {
@@ -46,51 +47,60 @@
     }
 
     main {
-      max-width: 900px;
-      margin: 80px auto;
+      max-width: 1000px;
+      margin: 160px auto 0;
       padding: 0 24px;
     }
 
     h1 {
-      font-size: 42px;
+      font-size: 54px;
       font-weight: 600;
-      margin-bottom: 16px;
+      margin-bottom: 30px;
     }
 
     h2 {
-      margin-top: 60px;
-      font-size: 26px;
+      margin-top: 100px;
+      font-size: 28px;
+      font-weight: 500;
       border-bottom: 1px solid #1f2933;
-      padding-bottom: 8px;
+      padding-bottom: 12px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 19px;
       color: #d1d5db;
+      margin-top: 22px;
+      max-width: 800px;
     }
 
-    ul {
-      margin-top: 16px;
-      padding-left: 20px;
+    .quiet {
+      color: #9ca3af;
+      font-size: 16px;
+      margin-top: 10px;
     }
 
-    li {
-      margin-bottom: 8px;
-      color: #cbd5e1;
+    .links {
+      margin-top: 40px;
     }
 
-    .note {
-      margin-top: 32px;
-      padding: 16px;
-      background: #111827;
-      border-left: 4px solid #3b82f6;
+    .links a {
+      display: inline-block;
+      margin-right: 22px;
+      margin-top: 12px;
+      color: #ffffff;
+      text-decoration: none;
       font-size: 15px;
-      color: #c7d2fe;
+      border-bottom: 1px solid #374151;
+      padding-bottom: 4px;
+    }
+
+    .links a:hover {
+      border-color: #ffffff;
     }
 
     footer {
-      margin-top: 120px;
-      padding: 24px;
+      margin-top: 200px;
+      padding: 30px 24px;
       border-top: 1px solid #1f2933;
       font-size: 14px;
       color: #9ca3af;
@@ -100,7 +110,7 @@
     footer a {
       color: #9ca3af;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 12px;
     }
 
     footer a:hover {
@@ -111,73 +121,118 @@
 
 <body>
 
-  <!-- HEADER / NAVIGATION -->
+  <!-- HEADER -->
   <header>
     <img src="logo.png" alt="Whytegod Logo" />
-
     <nav>
       <a href="index.html">Home</a>
       <a href="intent.html">Intent</a>
-      <a href="security.html">Security</a>
       <a href="flow.html">Flow</a>
+      <a href="security.html">Security</a>
       <a href="governance.html">Governance</a>
       <a href="manifesto.html">Manifesto</a>
       <a href="reference.html">Reference</a>
+      <a href="privacy.html">Privacy</a>
     </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
+  <!-- MAIN -->
   <main>
 
-    <h1>Whytegod</h1>
+    <h1>Whytegod Protocol</h1>
 
     <p>
-      Whytegod is an <strong>AI-first, peer-to-peer financial execution protocol</strong>
-      specification built on top of the Open Financial Network (OFN).
+      Whytegod is a neutral protocol designed to reduce complexity,
+      remove unnecessary intermediaries,
+      and restore clarity for the ordinary man.
+    </p>
+
+    <p class="quiet">
+      It is not a product.  
+      It is not a platform.  
+      It is not a market.
+    </p>
+
+    <h2>What Exists</h2>
+
+    <p>
+      Whytegod exists as a system of rules,
+      constraints,
+      and predictable outcomes.
     </p>
 
     <p>
-      It defines a <strong>standardized, intent-based execution layer</strong> for financial actions,
-      where users express <em>what they want to achieve</em>, and compliant systems determine
-      <em>how execution occurs</em>.
+      It does not persuade.
+      It does not optimize behavior.
+      It does not chase attention.
     </p>
 
-    <div class="note">
-      Whytegod is not an application.<br/>
-      It is not an exchange.<br/>
-      It is a protocol specification.
+    <h2>Why It Exists</h2>
+
+    <p>
+      Modern financial and digital systems
+      have become layered with incentives
+      that do not serve the user.
+    </p>
+
+    <p>
+      Whytegod removes layers.
+      What remains is function.
+    </p>
+
+    <h2>How It Operates</h2>
+
+    <p>
+      The protocol is deterministic.
+      The same input produces the same output.
+    </p>
+
+    <p>
+      No discretion.
+      No preference.
+      No interpretation.
+    </p>
+
+    <h2>What It Is Not</h2>
+
+    <p>
+      Whytegod is not a buy-and-sell website.
+      It is not an exchange.
+      It is not a broker.
+    </p>
+
+    <p>
+      Any economic activity that interacts with it
+      remains external to the protocol itself.
+    </p>
+
+    <h2>Structure</h2>
+
+    <p>
+      Each section below documents a single aspect
+      of the system.
+    </p>
+
+    <div class="links">
+      <a href="intent.html">Intent</a>
+      <a href="flow.html">Flow</a>
+      <a href="security.html">Security</a>
+      <a href="governance.html">Governance</a>
+      <a href="manifesto.html">Manifesto</a>
+      <a href="reference.html">Reference</a>
+      <a href="privacy.html">Privacy</a>
     </div>
 
-    <h2>Purpose</h2>
+    <h2>State</h2>
 
     <p>
-      Modern financial systems force users to manage execution details manually.
-      Whytegod removes this burden by separating <strong>intent</strong> from
-      <strong>execution complexity</strong>.
+      Whytegod does not announce milestones.
+      It does not publish roadmaps.
     </p>
-
-    <ul>
-      <li>Routing decisions</li>
-      <li>Counterparty discovery</li>
-      <li>Timing and settlement logic</li>
-      <li>Trust assumptions</li>
-    </ul>
 
     <p>
-      The protocol enables systems where humans define goals,
-      and machines coordinate execution without custodial control.
+      The system exists when it exists.
     </p>
-
-    <!-- OPTIONAL FUTURE SECTION (SAFE TO KEEP) -->
-    <h2>Design Principles</h2>
-
-    <ul>
-      <li>Decentralization by default</li>
-      <li>Non-custodial execution</li>
-      <li>Protocol over platform</li>
-      <li>Simple enough for the ordinary man</li>
-      <li>Composable and permissionless</li>
-    </ul>
 
   </main>
 
