@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whytegod — Intent Model</title>
+
+  <meta name="description" content="Intent model specification for the Whytegod protocol." />
+  <link rel="icon" href="favicon.png" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0b0b0b;
+      color: #eaeaea;
+      line-height: 1.7;
+    }
+
+    main {
+      max-width: 820px;
+      margin: auto;
+      padding: 48px 20px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      margin-top: 3rem;
+      font-size: 1.3rem;
+    }
+
+    p {
+      max-width: 720px;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    code {
+      background: #151515;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+
+    a {
+      color: #9ad1ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <h1>Intent Model</h1>
+
+    <p>
+      This document defines the intent model used by the Whytegod protocol.
+      An intent represents a user’s desired outcome, independent of execution steps,
+      infrastructure, or counterparties.
+    </p>
+
+    <h2>Definition</h2>
+
+    <p>
+      An <strong>intent</strong> is a declarative statement of <em>what</em> a user wants to achieve,
+      not <em>how</em> the action should be performed.
+    </p>
+
+    <p>
+      Intents are designed to be deterministic, machine-readable, and policy-constrained.
+    </p>
+
+    <h2>Design Principles</h2>
+
+    <ul>
+      <li>Outcome-focused, not procedural</li>
+      <li>Independent of execution routes</li>
+      <li>Explicit constraints and limits</li>
+      <li>Auditable and verifiable</li>
+    </ul>
+
+    <h2>Intent Structure</h2>
+
+    <p>
+      A valid intent MUST specify:
+    </p>
+
+    <ul>
+      <li>the desired outcome</li>
+      <li>constraints (limits, time, risk)</li>
+      <li>acceptable failure conditions</li>
+    </ul>
+
+    <p>
+      An intent MUST NOT specify:
+    </p>
+
+    <ul>
+      <li>specific exchanges or venues</li>
+      <li>manual routing logic</li>
+      <li>custodial assumptions</li>
+    </ul>
+
+    <h2>Validation</h2>
+
+    <p>
+      Intents are validated before execution to ensure:
+    </p>
+
+    <ul>
+      <li>schema correctness</li>
+      <li>internal consistency</li>
+      <li>compliance with protocol rules</li>
+    </ul>
+
+    <p>
+      Invalid intents MUST be rejected prior to execution planning.
+    </p>
+
+    <h2>Execution Independence</h2>
+
+    <p>
+      The same intent may produce different execution plans depending on:
+    </p>
+
+    <ul>
+      <li>available liquidity</li>
+      <li>network conditions</li>
+      <li>policy constraints</li>
+    </ul>
+
+    <p>
+      This separation ensures flexibility without sacrificing user intent.
+    </p>
+
+    <h2>Protocol Invariants</h2>
+
+    <ul>
+      <li>User intent is the primary authority</li>
+      <li>Execution logic is replaceable</li>
+      <li>No hidden interpretation of intent</li>
+      <li>All constraints are explicit</li>
+    </ul>
+
+    <footer>
+      <p>
+        This document is part of the Whytegod protocol specification.<br />
+        The canonical source remains <code>INTENT.md</code>.
+      </p>
+    </footer>
+
+  </main>
+</body>
+</html>
