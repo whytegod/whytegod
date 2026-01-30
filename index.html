@@ -6,47 +6,89 @@
   <title>Whytegod</title>
 
   <style>
-    body {
+    /* RESET */
+    * {
       margin: 0;
       padding: 0;
-      background: #0d0d0d;
-      color: #f5f5f5;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #111 0%, #000 60%);
+      color: #f2f2f2;
       font-family: Arial, Helvetica, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      text-align: center;
+      animation: breathe 12s ease-in-out infinite;
+    }
+
+    @keyframes breathe {
+      0% { background-position: 50% 0%; }
+      50% { background-position: 50% 100%; }
+      100% { background-position: 50% 0%; }
     }
 
     .container {
-      max-width: 700px;
-      padding: 40px 20px;
+      max-width: 780px;
+      padding: 60px 24px;
+      text-align: center;
+      animation: fadeIn 1.8s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     h1 {
       font-size: 3rem;
-      margin-bottom: 10px;
       letter-spacing: 1px;
-    }
-
-    .tagline {
-      font-size: 1.2rem;
-      color: #00ffcc;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+      color: #ffffff;
+      text-shadow: 0 0 20px rgba(0, 255, 204, 0.15);
     }
 
     p {
       font-size: 1.05rem;
-      line-height: 1.7;
-      margin-bottom: 20px;
-      color: #dddddd;
+      line-height: 1.8;
+      color: #d8d8d8;
+      margin-bottom: 22px;
     }
 
-    .closing {
+    .accent {
+      color: #00ffcc;
+      font-weight: 600;
+    }
+
+    .pulse {
+      display: inline-block;
+      animation: pulse 3s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
+
+    .footer {
       margin-top: 40px;
-      font-size: 0.95rem;
-      opacity: 0.7;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+
+    /* Optional hover magic */
+    .container:hover h1 {
+      text-shadow: 0 0 28px rgba(0, 255, 204, 0.35);
+      transition: 0.4s ease;
     }
   </style>
 </head>
@@ -54,34 +96,31 @@
 <body>
   <div class="container">
 
-    <!-- Optional logo (only if you have it) -->
-    <!-- <img src="whytegod-logo.png" alt="Whytegod Logo" width="120" /> -->
-
-    <h1>Whytegod</h1>
-    <div class="tagline">
-      A decentralized protocol for human intent
-    </div>
+    <h1 class="pulse">Whytegod</h1>
 
     <p>
-      Whytegod is not a marketplace.  
-      It is not a bank.  
-      It is not a buy-and-sell platform.
+      A protocol for <span class="accent">intent</span>,
+      not control.
     </p>
 
     <p>
-      Whytegod is a coordination layer — where intent, logic, and trust
-      move without permission, intermediaries, or centralized control.
+      Built for coordination without permission.
+      Designed to evolve without ownership.
     </p>
 
     <p>
-      Built for the everyday person.  
-      Designed to stay decentralized.  
-      Engineered to evolve.
+      No hype.  
+      No pressure.  
+      Just alignment.
     </p>
 
-    <div class="closing">
-      This is not a product.  
-      This is a beginning.
+    <p class="accent">
+      Whytegod is infrastructure — quietly alive.
+    </p>
+
+    <div class="footer">
+      This is not a launch.  
+      It’s a signal.
     </div>
 
   </div>
