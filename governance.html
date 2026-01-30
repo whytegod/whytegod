@@ -2,46 +2,185 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Whytegod — Governance</title>
+  <title>Governance — Whytegod Protocol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Governance principles of the Whytegod Protocol — slow, transparent, accountable decision-making." />
   <link rel="icon" href="favicon.png" />
   <style>
-    body { background:#0b0b0b; color:#eaeaea; font-family:system-ui; margin:0; }
-    section { max-width:900px; margin:auto; padding:2rem; }
-    a { color:#9ad1ff; text-decoration:none; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0b0f14;
+      color: #e6e6e6;
+      line-height: 1.8;
+    }
+    header {
+      padding: 3.5rem 1.5rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.8rem;
+    }
+    h2 {
+      margin-top: 3rem;
+      color: #ffd479;
+    }
+    p {
+      max-width: 840px;
+      margin: 1.2rem auto;
+      font-size: 1.05rem;
+      color: #d6d6d6;
+    }
+    nav {
+      margin-top: 2.2rem;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0.4rem;
+      padding: 0.6rem 1.1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #0b0f14;
+      background: #e6e6e6;
+      font-weight: 500;
+    }
+    nav a:hover {
+      background: #ffe6b0;
+    }
+    section {
+      padding: 2.5rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .gov-box {
+      background: #111827;
+      padding: 1.9rem;
+      border-radius: 12px;
+      margin: 2.2rem 0;
+    }
+    footer {
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+    }
   </style>
 </head>
+
 <body>
 
-<section>
-  <a href="index.html">← Index</a>
+<header>
   <h1>Governance</h1>
-
   <p>
-    Whytegod governance defines protocol evolution,
-    not operational control.
+    Power should be visible.  
+    Decisions should be slow.
   </p>
 
-  <h2>Governed Elements</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="intent.html">Intent</a>
+    <a href="security.html">Security</a>
+    <a href="manifesto.html">Manifesto</a>
+  </nav>
+</header>
 
-  <ul>
-    <li>Intent schema changes</li>
-    <li>Validation rules</li>
-    <li>Execution constraints</li>
-  </ul>
-
-  <h2>Not Governed</h2>
-
-  <ul>
-    <li>User intent</li>
-    <li>Executor participation</li>
-    <li>Outcome preferences</li>
-  </ul>
-
+<section>
+  <h2>What governance means here</h2>
   <p>
-    Governance cannot override execution truth.
+    Governance in Whytegod is not about
+    voting every week
+    or chasing consensus.
+  </p>
+  <p>
+    It is about **limiting power**
+    before distributing it.
   </p>
 </section>
+
+<section class="gov-box">
+  <h2>Protocol first, people second</h2>
+  <p>
+    The protocol defines the rules.
+  </p>
+  <p>
+    Humans interpret, maintain,
+    and improve —
+    but do not override core guarantees.
+  </p>
+</section>
+
+<section class="gov-box">
+  <h2>Minimal governance surface</h2>
+  <p>
+    Fewer levers mean fewer attacks.
+  </p>
+  <p>
+    Whytegod deliberately limits
+    the number of parameters
+    that can be changed.
+  </p>
+</section>
+
+<section class="gov-box">
+  <h2>Slow upgrades</h2>
+  <p>
+    No emergency upgrades.
+    No midnight changes.
+  </p>
+  <p>
+    Changes follow:
+    proposal → review → cooling period → execution.
+  </p>
+</section>
+
+<section class="gov-box">
+  <h2>Public reasoning</h2>
+  <p>
+    Decisions must be explained
+    in human language.
+  </p>
+  <p>
+    Silence is not governance.
+  </p>
+</section>
+
+<section class="gov-box">
+  <h2>No permanent rulers</h2>
+  <p>
+    Roles are temporary.
+  </p>
+  <p>
+    Authority decays
+    unless renewed transparently.
+  </p>
+</section>
+
+<section class="gov-box">
+  <h2>Forking is allowed</h2>
+  <p>
+    The ultimate governance right
+    is the right to leave.
+  </p>
+  <p>
+    Whytegod does not trap users
+    or developers.
+  </p>
+</section>
+
+<section>
+  <h2>Governance is restraint</h2>
+  <p>
+    The goal is not to rule faster.
+  </p>
+  <p>
+    The goal is to rule less.
+  </p>
+</section>
+
+<footer>
+  Whytegod governance exists to prevent abuse — not to enable control.
+</footer>
 
 </body>
 </html>
